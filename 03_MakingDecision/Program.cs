@@ -10,8 +10,7 @@ namespace _03_MakingDecision
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Merhaba ");
-            Console.ReadLine();
+            
         }
     }
 }
