@@ -160,6 +160,25 @@ namespace _03_MakingDecision
 
             //char
 
+            char team;
+            Console.Write("Lütfen takım sembolünü giriniz: ");
+            
+                team = char.Parse(Console.ReadLine());
+
+            if (team == 'g' | team == 'G')
+            {
+                Console.WriteLine("Galatasaray ");
+            }
+            if (team == 'f' | team=='F')
+            {
+                Console.WriteLine("Fenerbahçe");
+            }
+            if (team=='b'|team=='B')
+            {
+                Console.WriteLine("Beşiktaş");
+            }
+
+
 
 
 
