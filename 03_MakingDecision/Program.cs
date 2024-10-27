@@ -157,28 +157,53 @@ namespace _03_MakingDecision
             //    Console.WriteLine("Sayı tektir");
             //}
             //****************************************
+            #endregion
 
+            #region Char Degiskenler ile Karar Yapiları
             //char
 
-            char team;
-            Console.Write("Lütfen takım sembolünü giriniz: ");
-            
-                team = char.Parse(Console.ReadLine());
+            //char team;
+            //Console.Write("Lütfen takım sembolünü giriniz: ");
 
-            if (team == 'g' | team == 'G')
-            {
-                Console.WriteLine("Galatasaray ");
-            }
-            if (team == 'f' | team=='F')
-            {
-                Console.WriteLine("Fenerbahçe");
-            }
-            if (team=='b'|team=='B')
-            {
-                Console.WriteLine("Beşiktaş");
-            }
+            //    team = char.Parse(Console.ReadLine());
+
+            //if (team == 'g' | team == 'G')
+            //{
+            //    Console.WriteLine("Galatasaray ");
+            //}
+            //if (team == 'f' | team=='F')
+            //{
+            //    Console.WriteLine("Fenerbahçe");
+            //}
+            //if (team=='b'|team=='B')
+            //{
+            //    Console.WriteLine("Beşiktaş");
+            //}
 
             //******************************************
+            #endregion
+
+            #region Ornek Proje Uygulamasi
+
+
+
+            Console.WriteLine("****** C# Eğitim Kampı Restoran ******");
+            Console.WriteLine();
+            Console.WriteLine("-------------------------------------");
+            Console.WriteLine("1-Ana Yemekler");
+            Console.WriteLine("2-Çorbalar");
+            Console.WriteLine("3-Pizzalar");
+            Console.WriteLine("4-İçecekler");
+            Console.WriteLine("5-Tatlılar");
+            Console.WriteLine("-------------------------------------");
+            Console.WriteLine();
+
+            string menuItem;
+
+
+
+
+
 
 
 
