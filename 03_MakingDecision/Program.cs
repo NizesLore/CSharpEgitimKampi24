@@ -185,8 +185,6 @@ namespace _03_MakingDecision
 
             #region Ornek Proje Uygulamasi
 
-
-
             Console.WriteLine("****** C# Eğitim Kampı Restoran ******");
             Console.WriteLine();
             Console.WriteLine("-------------------------------------");
@@ -199,6 +197,21 @@ namespace _03_MakingDecision
             Console.WriteLine();
 
             string menuItem;
+            menuItem=Console.ReadLine();
+
+            Console.WriteLine();
+            Console.WriteLine("Ayrıntısını görmek istedğiniz menüyü seçiniz: ");
+
+            if (menuItem=="1")
+            {
+                Console.WriteLine();
+                Console.WriteLine("---------Ana Yemekler---------");
+                Console.WriteLine("1-");
+
+
+
+
+            }
 
 
 
