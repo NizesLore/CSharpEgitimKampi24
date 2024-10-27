@@ -185,39 +185,82 @@ namespace _03_MakingDecision
 
             #region Ornek Proje Uygulamasi
 
-            Console.WriteLine("****** C# Eğitim Kampı Restoran ******");
-            Console.WriteLine();
-            Console.WriteLine("-------------------------------------");
-            Console.WriteLine("1-Ana Yemekler");
-            Console.WriteLine("2-Çorbalar");
-            Console.WriteLine("3-Pizzalar");
-            Console.WriteLine("4-İçecekler");
-            Console.WriteLine("5-Tatlılar");
-            Console.WriteLine("-------------------------------------");
-            Console.WriteLine();
+            //Console.WriteLine("****** C# Eğitim Kampı Restoran ******");
+            //Console.WriteLine();
+            //Console.WriteLine("-------------------------------------");
+            //Console.WriteLine("1-Ana Yemekler");
+            //Console.WriteLine("2-Çorbalar");
+            //Console.WriteLine("3-Pizzalar");
+            //Console.WriteLine("4-İçecekler");
+            //Console.WriteLine("5-Tatlılar");
+            //Console.WriteLine("-------------------------------------");
+            //Console.WriteLine();
 
-            string menuItem;
-            menuItem=Console.ReadLine();
+            //string menuItem;
 
-            Console.WriteLine();
-            Console.WriteLine("Ayrıntısını görmek istedğiniz menüyü seçiniz: ");
+            //Console.Write("Ayrıntısını görmek istedğiniz menü seçimi: ");
+            //menuItem = Console.ReadLine();
 
-            if (menuItem=="1")
-            {
-                Console.WriteLine();
-                Console.WriteLine("---------Ana Yemekler---------");
-                Console.WriteLine("1-");
+            //if (menuItem == "1")
+            //{
+            //    Console.WriteLine();
+            //    Console.WriteLine("---------Ana Yemekler---------");
+            //    Console.WriteLine();
+            //    Console.WriteLine("1-Köri Soslu Tavuk");
+            //    Console.WriteLine("2-Kızartma Tabağı");
+            //    Console.WriteLine("3-Fasulye Pilav");
+            //    Console.WriteLine("4-Fırında Somon");
+            //    Console.WriteLine("5-Patlıcan Musakka");
+            //    Console.WriteLine();
+            //    Console.WriteLine("---------Ana Yemekler---------");
+            //}
 
+            //if (menuItem == "2")
+            //{
+            //    Console.WriteLine();
+            //    Console.WriteLine("---------Çorbalar---------");
+            //    Console.WriteLine();
+            //    Console.WriteLine("1-Mercimek Çorbası");
+            //    Console.WriteLine("2-Ezogelin Çorba");
+            //    Console.WriteLine();
+            //    Console.WriteLine("---------Çorbalar---------");
+            //}
 
+            //if (menuItem == "3")
+            //{
+            //    Console.WriteLine();
+            //    Console.WriteLine("---------Pizzalar---------");
+            //    Console.WriteLine();
+            //    Console.WriteLine("1-Akdeniz Pizza");
+            //    Console.WriteLine("2-Margaritha");
+            //    Console.WriteLine("3-Tavuklu Pizza");
+            //    Console.WriteLine();
+            //    Console.WriteLine("---------Pizzalar---------");
+            //}
 
+            //if (menuItem == "4")
+            //{
+            //    Console.WriteLine();
+            //    Console.WriteLine("---------İçecekler---------");
+            //    Console.WriteLine();
+            //    Console.WriteLine("1-Kola");
+            //    Console.WriteLine("2-Ayran");
+            //    Console.WriteLine("3-Su");
+            //    Console.WriteLine();
+            //    Console.WriteLine("---------İçecekler---------");
+            //}
 
-            }
-
-
-
-
-
-
+            //if (menuItem == "5")
+            //{
+            //    Console.WriteLine();
+            //    Console.WriteLine("---------Tatlılar---------");
+            //    Console.WriteLine();
+            //    Console.WriteLine("1-Triliçe");
+            //    Console.WriteLine("2-Kazandibi");
+            //    Console.WriteLine("3-Sütlaç");
+            //    Console.WriteLine();
+            //    Console.WriteLine("---------Tatlılar---------");
+            //}
 
 
             #endregion
