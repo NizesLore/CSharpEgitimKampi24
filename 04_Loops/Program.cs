@@ -12,6 +12,11 @@ namespace _04_Loops
         {
             #region For
 
+            //Loops
+            //3+3=6
+
+
+
 
             #endregion
 
