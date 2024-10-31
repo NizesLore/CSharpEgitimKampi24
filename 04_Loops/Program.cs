@@ -14,10 +14,21 @@ namespace _04_Loops
 
             //Loops
             //3+3=6
-            int i;
-            for (i = 1; i <= 5; i++)
+
+            //int i;
+            //for (i = 1; i <= 5; i++)
+            //{
+            //    Console.WriteLine("C# Eğitim Kampı");
+            //}
+
+            //for (int i = 1; i <=20; i++)
+            //{
+            //    Console.WriteLine(i);
+            //}
+
+            for (int i = 3; i <= 50; i+=3)
             {
-                Console.WriteLine("C# Eğitim Kampı");
+                Console.WriteLine(i);
             }
 
 
