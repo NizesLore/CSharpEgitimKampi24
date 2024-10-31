@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Runtime.InteropServices;
 using System.Text;
 using System.Threading.Tasks;
 
@@ -32,17 +33,32 @@ namespace _04_Loops
             //}
 
 
-            Console.Write("Lütfen ekrana yazdırılmasını istediğinizz adedi giriniz: ");
-            int finishValue= int.Parse(Console.ReadLine());
+            //Console.Write("Lütfen ekrana yazdırılmasını istediğinizz adedi giriniz: ");
+            //int finishValue= int.Parse(Console.ReadLine());
 
-            for (int i = 1; i < finishValue; i++)
+            //for (int i = 1; i < finishValue; i++)
+            //{
+            //    Console.WriteLine("Yaşasın CUMHURİYET");
+            //}
+
+
+
+            #endregion
+
+
+            #region For Döngüsü ile Karar Yapıları
+            for (int i =1; i <=100; i++)
             {
-                Console.WriteLine("Yaşasın CUMHURİYET");
+                if (i%5==0)
+                {
+                    Console.WriteLine(i);
+                }
             }
 
 
 
             #endregion
+
 
             Console.Read();
         }
