@@ -47,15 +47,23 @@ namespace _04_Loops
 
 
             #region For Döngüsü ile Karar Yapıları
-            for (int i =1; i <=100; i++)
+            //for (int i =1; i <=100; i++)
+            //{
+            //    if (i%5==0)
+            //    {
+            //        Console.WriteLine(i);
+            //    }
+            //}
+
+
+
+            int totalValue=0;
+
+            for (int i = 1; i <=10; i++)
             {
-                if (i%5==0)
-                {
-                    Console.WriteLine(i);
-                }
+                totalValue += i;
             }
-
-
+            Console.WriteLine(totalValue);
 
             #endregion
 
