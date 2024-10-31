@@ -14,13 +14,17 @@ namespace _04_Loops
 
             //Loops
             //3+3=6
-
-
+            int i;
+            for (i = 1; i <= 5; i++)
+            {
+                Console.WriteLine("C# Eğitim Kampı");
+            }
 
 
             #endregion
 
             Console.Read();
+        }
+
     }
-    
 }
