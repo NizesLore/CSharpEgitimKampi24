@@ -56,8 +56,8 @@ namespace _04_Loops
             //}
 
 
-
-            int totalValue=0;
+            int totalValue = 0;
+            //int totalValue=0;
 
             for (int i = 1; i <=10; i++)
             {
