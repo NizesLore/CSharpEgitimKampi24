@@ -44,7 +44,6 @@ namespace _04_Loops
 
             #endregion
 
-
             #region For Döngüsü ile Karar Yapıları
 
             //for (int i =1; i <=100; i++)
@@ -115,6 +114,39 @@ namespace _04_Loops
             //Console.WriteLine("***************************");
 
             #endregion
+
+            #region While Dongusu
+
+            //While (Şart)
+            //{
+            //İşlemler
+            //}
+
+            //int i = 1;
+            //while (i<=10)
+            //{
+            //    Console.WriteLine("Merhaba Döngüler");
+            //    i++;
+            //};
+            Console.WriteLine("*****************************");
+            int i = 1;
+
+            while (i <= 10)
+            {
+                if (i % 3 == 0)
+                {
+                    Console.WriteLine(i);
+                }
+                i++;
+            }
+
+            Console.WriteLine("*****************************");
+
+            #endregion
+
+
+
+
             Console.Read();
         }
 
