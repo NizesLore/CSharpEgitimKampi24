@@ -128,19 +128,29 @@ namespace _04_Loops
             //    Console.WriteLine("Merhaba Döngüler");
             //    i++;
             //};
-            Console.WriteLine("*****************************");
-            int i = 1;
+            //Console.WriteLine("*****************************");
+            //int i = 1;
+
+            //while (i <= 10)
+            //{
+            //    if (i % 3 == 0)
+            //    {
+            //        Console.WriteLine(i);
+            //    }
+            //    i++;
+            //}
+
+            //Console.WriteLine("*****************************");
+            int i= 1;
+
+            int sum = 0;
 
             while (i <= 10)
             {
-                if (i % 3 == 0)
-                {
-                    Console.WriteLine(i);
-                }
+                sum += i;
                 i++;
             }
-
-            Console.WriteLine("*****************************");
+            Console.WriteLine(sum);
 
             #endregion
 
