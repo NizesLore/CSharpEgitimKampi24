@@ -66,26 +66,41 @@ namespace _04_Loops
 
             //Console.WriteLine("***************************");
 
-            int totalValue=0;
+            //int totalValue=0;
 
-            for (int i = 1; i<=20;i++)
-            {
-                if (i%2==0)
-                {
-                    totalValue += i;
-                    Console.WriteLine(i);
-                }
-                
+            //for (int i = 1; i<=20;i++)
+            //{
+            //    if (i%2==0)
+            //    {
+            //        totalValue += i;
+            //        Console.WriteLine(i);
+            //    }
 
-            }
-            Console.WriteLine("-----------");
-            Console.WriteLine(totalValue);
+            //}
+            //Console.WriteLine("-----------");
+            //Console.WriteLine(totalValue);
 
+            //Console.WriteLine("***************************");
 
+            //int number = 0;
+            //for (int i = 1; i < 50; i++)
+            //{
+            //    if (i%7==0)
+            //    {
+            //        Console.WriteLine(i);
+            //    }
+            //}
+            //Console.WriteLine("***************************");
+            //int count = 0;
 
-
-
-
+            //for (int i = 1; i < 50; i++)
+            //{
+            //    if (i%7==0)
+            //    {
+            //        count++;
+            //    }
+            //}
+            //Console.WriteLine(count);
 
 
             #endregion
