@@ -13,40 +13,40 @@ namespace _04_Loops
         {
             #region For
 
-            //Loops
-            //3+3=6
+            //Loops 1+2+3+4+5+6
+            //3+3=6+4=10+5=15+6=21
 
-            //int i;
-            //for (i = 1; i <= 5; i++)
-            //{
-            //    Console.WriteLine("C# Eğitim Kampı");
-            //}
+            //Console.WriteLine("****************************");
+            ////int i;
+            ////for (i = 1; i <= 5; i++)
+            ////{
+            ////    Console.WriteLine("C# Eğitim Kampı");
+            ////}
+            //Console.WriteLine("****************************");
+            ////for (int i = 1; i <=20; i++)
+            ////{
+            ////    Console.WriteLine(i);
+            ////}
+            //Console.WriteLine("****************************");
+            ////for (int i = 3; i <= 50; i+=3)
+            ////{
+            ////    Console.WriteLine(i);
+            ////}
+            //Console.WriteLine("****************************");
 
-            //for (int i = 1; i <=20; i++)
-            //{
-            //    Console.WriteLine(i);
-            //}
-
-            //for (int i = 3; i <= 50; i+=3)
-            //{
-            //    Console.WriteLine(i);
-            //}
-
-
-            //Console.Write("Lütfen ekrana yazdırılmasını istediğinizz adedi giriniz: ");
+            //Console.Write("Lütfen ekrana yazdırılmasını istediğiniz adedi giriniz: ");
             //int finishValue= int.Parse(Console.ReadLine());
 
-            //for (int i = 1; i < finishValue; i++)
+            //for (int i = 1; i < = finishValue; i++)
             //{
-            //    Console.WriteLine("Yaşasın CUMHURİYET");
+            //    Console.WriteLine("YAŞASIN CUMHURİYET");
             //}
-
-
 
             #endregion
 
 
             #region For Döngüsü ile Karar Yapıları
+
             //for (int i =1; i <=100; i++)
             //{
             //    if (i%5==0)
@@ -55,15 +55,38 @@ namespace _04_Loops
             //    }
             //}
 
+            //Console.WriteLine("***************************");
+            //int totalValue = 0;
 
-            int totalValue = 0;
-            //int totalValue=0;
+            //for (int i = 1; i <= 10; i++)
+            //{
+            //    totalValue += i;
+            //}
+            //Console.WriteLine(totalValue);
 
-            for (int i = 1; i <=10; i++)
+            //Console.WriteLine("***************************");
+
+            int totalValue=0;
+
+            for (int i = 1; i<=20;i++)
             {
-                totalValue += i;
+                if (i%2==0)
+                {
+                    totalValue += i;
+                    Console.WriteLine(i);
+                }
+                
+
             }
+            Console.WriteLine("-----------");
             Console.WriteLine(totalValue);
+
+
+
+
+
+
+
 
             #endregion
 
