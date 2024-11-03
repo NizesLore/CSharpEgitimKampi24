@@ -129,28 +129,51 @@ namespace _05_LoopsWithStars
             #endregion
 
             #region Pyramid
-            int n = 5;
+            //int n = 5;
 
-            for (int i = 1; i <= n; i++)
-            {
-                //Bosluklar
-                for (int j = n - i; j > 0; j--)
-                {
-                    Console.Write(" ");
-                }
+            //for (int i = 1; i <= n; i++)
+            //{
+            //    //Bosluklar
+            //    for (int j = n - i; j > 0; j--)
+            //    {
+            //        Console.Write(" ");
+            //    }
 
-                //Yıldızlar
-                for (int k = 1; k <= 2 * i - 1; k++)
-                {
-                    Console.Write("*");
-                }
-                Console.WriteLine();
-            }
+            //    //Yıldızlar
+            //    for (int k = 1; k <= 2 * i - 1; k++)
+            //    {
+            //        Console.Write("*");
+            //    }
+            //    Console.WriteLine();
+            //}
 
 
 
             #endregion
 
+            #region Ters Pyramid
+
+            //int n = 5;
+            //for (int i = n; i >= 1; i--)
+            //{
+            //    //Bosluklar
+            //    for (int j = n - i; j > 0; j--)
+            //    {
+            //        Console.Write(" ");
+            //    }
+
+            //    //Yıldızlar
+            //    for (int k = 1; k <= 2 * i - 1; k++)
+            //    {
+            //        Console.Write("*");
+            //    }
+            //    Console.WriteLine();
+
+            //}
+
+
+
+            #endregion
 
             Console.Read();
 
