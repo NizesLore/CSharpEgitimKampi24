@@ -141,20 +141,26 @@ namespace _04_Loops
             //}
 
             //Console.WriteLine("*****************************");
-            int i= 1;
 
-            int sum = 0;
+            //int i= 1;
+            //int sum = 0;
 
-            while (i <= 10)
-            {
-                sum += i;
-                i++;
-            }
-            Console.WriteLine(sum);
+            //while (i <= 10)
+            //{
+            //    sum += i;
+            //    i++;
+            //}
+            //Console.WriteLine(sum);
 
             #endregion
 
+            #region Ornek Snav Sorusu
 
+            //Klavyeden girilen 3 basamaklı sayının basamakları toplamını hesaplayan kodu yazınız.
+
+
+
+            #endregion
 
 
             Console.Read();
