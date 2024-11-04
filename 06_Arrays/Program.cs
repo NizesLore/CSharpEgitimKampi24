@@ -25,6 +25,20 @@ namespace _06_Arrays
 
             Console.WriteLine(colors[2]);
 
+            string[] cities = new string[5];
+            cities[0] = "Milano";
+            cities[1] = "Budapeşte";
+            cities[2] = "Lyon";
+            cities[3] = "Kahire";
+            cities[4] = "Üsküp";
+
+            Console.WriteLine(cities[4]);
+
+
+
+
+
+
 
 
 
