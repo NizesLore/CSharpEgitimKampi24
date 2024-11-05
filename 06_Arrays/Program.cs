@@ -54,12 +54,26 @@ namespace _06_Arrays
 
             #region Dizideki Tum Elemanlari Listeleme
 
-            string[] colors = { "Sarı", "Kırmızı", "Beyaz", "Mavi", "Yeşil", "Turuncu", "Pembe" };
+            //string[] colors = { "Sarı", "Kırmızı", "Beyaz", "Mavi", "Yeşil", "Turuncu", "Pembe" };
 
-            for (int i = 0; i < colors.Length; i++)
-            {
-                Console.WriteLine(colors[i]);
-            }
+            //for (int i = 0; i < colors.Length; i++)
+            //{
+            //    Console.WriteLine(colors[i]);
+            //}
+           //Console.WriteLine("*************************************");
+            //int[] numbers = { 4, 85, 96, 75, 125, 635, 488, 522, 456, 2365, 1120 };
+
+            //for (int i = 0; i < numbers.Length; i++)
+            //{
+            //    if (numbers[i]%3==0)
+            //    {
+            //        Console.WriteLine(numbers[i]);
+            //    }
+            //}
+
+
+
+
 
 
             #endregion
