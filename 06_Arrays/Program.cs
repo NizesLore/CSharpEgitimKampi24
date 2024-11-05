@@ -54,9 +54,12 @@ namespace _06_Arrays
 
             #region Dizideki Tum Elemanlari Listeleme
 
+            string[] colors = { "Sarı", "Kırmızı", "Beyaz", "Mavi", "Yeşil", "Turuncu", "Pembe" };
 
-
-
+            for (int i = 0; i < colors.Length; i++)
+            {
+                Console.WriteLine(colors[i]);
+            }
 
 
             #endregion
