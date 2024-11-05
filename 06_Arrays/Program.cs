@@ -45,9 +45,18 @@ namespace _06_Arrays
 
             //Console.WriteLine(numbers[5]);
 
-            string[] cities = { "Prag", "Roma", "Atina", "Ankara", "Bursa" };
+            //string[] cities = { "Prag", "Roma", "Atina", "Ankara", "Bursa" };
 
-            Console.WriteLine(cities[2]);
+            //Console.WriteLine(cities[2]);
+
+
+            #endregion
+
+            #region Dizideki Tum Elemanlari Listeleme
+
+
+
+
 
 
             #endregion
