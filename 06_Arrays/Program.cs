@@ -60,7 +60,7 @@ namespace _06_Arrays
             //{
             //    Console.WriteLine(colors[i]);
             //}
-           //Console.WriteLine("*************************************");
+            //Console.WriteLine("*************************************");
             //int[] numbers = { 4, 85, 96, 75, 125, 635, 488, 522, 456, 2365, 1120 };
 
             //for (int i = 0; i < numbers.Length; i++)
@@ -71,9 +71,12 @@ namespace _06_Arrays
             //    }
             //}
 
+            char[] symbols = { 'a', 'b', 'c', '*','/','-'};
 
-
-
+            for (int i = 0; i < symbols.Length; i++)
+            {
+                Console.WriteLine(symbols[i]);
+            }
 
 
             #endregion
