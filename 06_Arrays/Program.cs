@@ -71,13 +71,30 @@ namespace _06_Arrays
             //    }
             //}
 
-            char[] symbols = { 'a', 'b', 'c', '*','/','-'};
+            //Console.WriteLine("*************************************");
 
-            for (int i = 0; i < symbols.Length; i++)
+            //char[] symbols = { 'a', 'b', 'c', '*','/','-'};
+
+            //for (int i = 0; i < symbols.Length; i++)
+            //{
+            //    Console.WriteLine(symbols[i]);
+            //}
+
+            //Console.WriteLine("*************************************");
+
+            int[] myArray = { 47, 85, 95, 41, 25, 635, 789, 86, 100 };
+
+
+            int maxNumber = myArray[0];
+
+            for (int i = 0; i < myArray.Length; i++)
             {
-                Console.WriteLine(symbols[i]);
+                if (myArray[i]>maxNumber)
+                {
+                    maxNumber = myArray[i];
+                }
             }
-
+            Console.WriteLine(maxNumber);
 
             #endregion
 
