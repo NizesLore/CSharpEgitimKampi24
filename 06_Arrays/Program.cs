@@ -97,9 +97,15 @@ namespace _06_Arrays
             //Console.WriteLine(maxNumber);
             //Console.WriteLine("*************************************");
 
-            string[] persons = { "ali", "ahmet", "ayşe", "buse", "cem", "deniz" };
-            Console.WriteLine(persons.Length);
+            //string[] persons = { "ali", "ahmet", "ayşe", "buse", "cem", "deniz" };
+            //Console.WriteLine(persons.Length);
 
+            int[] numbers = { 45, 85, 52, 41, 86, 10, 22, 35 };
+            Array.Sort(numbers);
+            for (int i = 0; i < numbers.Length; i++)
+            {
+                Console.WriteLine(numbers[i]);
+            }
 
             #endregion
 
