@@ -98,7 +98,7 @@ namespace _06_Arrays
             //Console.WriteLine("*************************************");
 
             string[] persons = { "ali", "ahmet", "ayşe", "buse", "cem", "deniz" };
-
+            Console.WriteLine(persons.Length);
 
 
             #endregion
