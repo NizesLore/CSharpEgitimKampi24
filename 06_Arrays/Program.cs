@@ -107,14 +107,25 @@ namespace _06_Arrays
             //    Console.WriteLine(numbers[i]);
             //}
 
-            int[] numbers = { 45, 85, 52, 41, 86, 10, 22, 35 };
-            Array.Reverse(numbers);
-            for (int i = 0; i < numbers.Length; i++)
-            {
-                Console.WriteLine(numbers[i]);
-            }
+            //int[] numbers = { 45, 85, 52, 41, 86, 10, 22, 35 };
+            //Array.Reverse(numbers);
+            //for (int i = 0; i < numbers.Length; i++)
+            //{
+            //    Console.WriteLine(numbers[i]);
+            //}
 
             #endregion
+
+            #region Dizi Methodlar
+
+            string[] customers = { "ali", "buse", "ayşegül", "merve", "çınar", "kaya" },
+            int index = Array.IndexOf(customers, "merve");
+            Console.WriteLine(index);
+
+
+            #endregion
+
+
 
             Console.Read();
         }
