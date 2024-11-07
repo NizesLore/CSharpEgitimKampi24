@@ -82,19 +82,24 @@ namespace _06_Arrays
 
             //Console.WriteLine("*************************************");
 
-            int[] myArray = { 47, 85, 95, 41, 25, 635, 789, 86, 100 };
+            //int[] myArray = { 47, 85, 95, 41, 25, 635, 789, 86, 100 };
 
 
-            int maxNumber = myArray[0];
+            //int maxNumber = myArray[0];
 
-            for (int i = 0; i < myArray.Length; i++)
-            {
-                if (myArray[i]>maxNumber)
-                {
-                    maxNumber = myArray[i];
-                }
-            }
-            Console.WriteLine(maxNumber);
+            //for (int i = 0; i < myArray.Length; i++)
+            //{
+            //    if (myArray[i]>maxNumber)
+            //    {
+            //        maxNumber = myArray[i];
+            //    }
+            //}
+            //Console.WriteLine(maxNumber);
+            //Console.WriteLine("*************************************");
+
+            string[] persons = { "ali", "ahmet", "ayşe", "buse", "cem", "deniz" };
+
+
 
             #endregion
 
