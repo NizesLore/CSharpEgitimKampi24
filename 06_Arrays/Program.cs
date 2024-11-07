@@ -100,8 +100,15 @@ namespace _06_Arrays
             //string[] persons = { "ali", "ahmet", "ayşe", "buse", "cem", "deniz" };
             //Console.WriteLine(persons.Length);
 
+            //int[] numbers = { 45, 85, 52, 41, 86, 10, 22, 35 };
+            //Array.Sort(numbers);
+            //for (int i = 0; i < numbers.Length; i++)
+            //{
+            //    Console.WriteLine(numbers[i]);
+            //}
+
             int[] numbers = { 45, 85, 52, 41, 86, 10, 22, 35 };
-            Array.Sort(numbers);
+            Array.Reverse(numbers);
             for (int i = 0; i < numbers.Length; i++)
             {
                 Console.WriteLine(numbers[i]);
