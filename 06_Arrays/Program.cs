@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Runtime.InteropServices;
 using System.Text;
 using System.Threading.Tasks;
 
@@ -122,15 +123,25 @@ namespace _06_Arrays
             //int index = Array.IndexOf(customers, "merve");
             //Console.WriteLine(index);
 
-
-            int[] numbers = { 45, 85, 96, 63, 74, 10, 25, 22, 36 };
-            Console.WriteLine("Dizinin En Büyük Elemanı: " + numbers.Max() + 
-                " Dizinin En Küçük Elemanı: "+ numbers.Min());
-
+            //int[] numbers = { 45, 85, 96, 63, 74, 10, 25, 22, 36 };
+            //Console.WriteLine("Dizinin En Büyük Elemanı: " + numbers.Max() +
+            //    " Dizinin En Küçük Elemanı: " + numbers.Min());
 
             #endregion
 
+            #region Kullanıcıdan Değer Alma
 
+            string[] cities = new string[5];
+            for (int i = 0; i < cities.Length; i++)
+            {
+                Console.Write($"Lütfen {i+1}. Şehri Giriniz: ");
+                cities[i]=Console.ReadLine();
+            }
+
+
+
+
+            #endregion
 
             Console.Read();
         }
