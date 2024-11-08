@@ -138,9 +138,13 @@ namespace _06_Arrays
                 cities[i]=Console.ReadLine();
             }
 
+            Console.WriteLine();
+            Console.WriteLine("---------------------");
 
-
-
+            for (int i = 0; i < cities.Length; i++)
+            {
+                Console.WriteLine(cities[i]);
+            }
             #endregion
 
             Console.Read();
