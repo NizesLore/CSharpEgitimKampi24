@@ -131,20 +131,33 @@ namespace _06_Arrays
 
             #region Kullanıcıdan Değer Alma
 
-            string[] cities = new string[5];
-            for (int i = 0; i < cities.Length; i++)
-            {
-                Console.Write($"Lütfen {i+1}. Şehri Giriniz: ");
-                cities[i]=Console.ReadLine();
-            }
+            //string[] cities = new string[5];
+            //for (int i = 0; i < cities.Length; i++)
+            //{
+            //    Console.Write($"Lütfen {i+1}. Şehri Giriniz: ");
+            //    cities[i]=Console.ReadLine();
+            //}
 
-            Console.WriteLine();
-            Console.WriteLine("---------------------");
+            //Console.WriteLine();
+            //Console.WriteLine("---------------------");
 
-            for (int i = 0; i < cities.Length; i++)
+            //for (int i = 0; i < cities.Length; i++)
+            //{
+            //    Console.WriteLine(cities[i]);
+            //}
+
+            //Console.WriteLine("---------------------");
+
+            int[] numbers = { 10, 20, 30, 40, 50};
+            int sum = 0;
+
+            for (int i = 0; i < numbers.Length; i++)
             {
-                Console.WriteLine(cities[i]);
+                sum += numbers[i];
             }
+            Console.WriteLine(sum);
+
+
             #endregion
 
             Console.Read();
