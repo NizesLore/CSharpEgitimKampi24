@@ -162,7 +162,7 @@ namespace _06_Arrays
             int[] numbers = { 21, 42, 33, 54, 55, 66, 748, 897, 39, 220 };
 
             Console.WriteLine("Çift Sayılar");
-
+            Console.WriteLine();
             for (int i = 0; i < numbers.Length; i++)
             {
                 if (numbers[i]%2==0)
@@ -170,7 +170,16 @@ namespace _06_Arrays
                     Console.WriteLine(numbers[i]);
                 }
             }
-
+            Console.WriteLine("---------------------");
+            Console.WriteLine("Tek Sayılar");
+            Console.WriteLine();
+            for (int i = 0; i < numbers.Length; i++)
+            {
+                if (numbers[i] % 2 == 1)
+                {
+                    Console.WriteLine(numbers[i]);
+                }
+            }
             #endregion
 
             Console.Read();
