@@ -156,6 +156,7 @@ namespace _06_Arrays
                 sum += numbers[i];
             }
             Console.WriteLine(sum);
+            Console.WriteLine(sum);
 
 
             #endregion
