@@ -118,9 +118,14 @@ namespace _06_Arrays
 
             #region Dizi Methodlar
 
-            string[] customers = { "ali", "buse", "ayşegül", "merve", "çınar", "kaya" },
-            int index = Array.IndexOf(customers, "merve");
-            Console.WriteLine(index);
+            //string[] customers = { "ali", "buse", "ayşegül", "merve", "çınar", "kaya" };
+            //int index = Array.IndexOf(customers, "merve");
+            //Console.WriteLine(index);
+
+
+            int[] numbers = { 45, 85, 96, 63, 74, 10, 25, 22, 36 };
+            Console.WriteLine("Dizinin En Büyük Elemanı: " + numbers.Max() + 
+                " Dizinin En Küçük Elemanı: "+ numbers.Min());
 
 
             #endregion
