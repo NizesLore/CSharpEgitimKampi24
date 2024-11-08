@@ -148,16 +148,28 @@ namespace _06_Arrays
 
             //Console.WriteLine("---------------------");
 
-            int[] numbers = { 10, 20, 30, 40, 50};
-            int sum = 0;
+            //int[] numbers = { 10, 20, 30, 40, 50};
+            //int sum = 0;
+
+            //for (int i = 0; i < numbers.Length; i++)
+            //{
+            //    sum += numbers[i];
+            //}
+            //Console.WriteLine(sum);
+
+            // Console.WriteLine("---------------------");
+
+            int[] numbers = { 21, 42, 33, 54, 55, 66, 748, 897, 39, 220 };
+
+            Console.WriteLine("Çift Sayılar");
 
             for (int i = 0; i < numbers.Length; i++)
             {
-                sum += numbers[i];
+                if (numbers[i]%2==0)
+                {
+                    Console.WriteLine(numbers[i]);
+                }
             }
-            Console.WriteLine(sum);
-            Console.WriteLine(sum);
-
 
             #endregion
 
