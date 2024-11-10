@@ -25,16 +25,23 @@ namespace _07_ForeachLoop
             //    Console.WriteLine(city);
             //}
 
-            int[] numbers = { 45, 78, 985, 635, 74, 11, 22, 33, 41, 205, 6578, 10394 };
+            //int[] numbers = { 45, 78, 985, 635, 74, 11, 22, 33, 41, 205, 6578, 10394 };
 
+            //foreach (int number in numbers)
+            //{
+            //    Console.WriteLine(number);
+            //}
+
+            Console.WriteLine("-----------------------");
+
+            int[] numbers = { 45, 78, 985, 635, 74, 11, 22, 33, 41, 205, 6578, 10394 };
             foreach (int number in numbers)
             {
-                Console.WriteLine(number);
+                if (number % 2 == 0)
+                {
+                    Console.WriteLine(number);
+                }
             }
-
-
-
-
 
 
 
