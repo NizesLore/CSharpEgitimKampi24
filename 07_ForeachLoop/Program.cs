@@ -19,11 +19,26 @@ namespace _07_ForeachLoop
             //3: In
             //4: Liste, Koleksiyon, Dizi
 
-            string[] cities = { "Milano", "Roma", "Budapeşte", "Ankara", "İstanbul", "Varşova" };
-            foreach (string city in cities)
+            //string[] cities = { "Milano", "Roma", "Budapeşte", "Ankara", "İstanbul", "Varşova" };
+            //foreach (string city in cities)
+            //{
+            //    Console.WriteLine(city);
+            //}
+
+            int[] numbers = { 45, 78, 985, 635, 74, 11, 22, 33, 41, 205, 6578, 10394 };
+
+            foreach (int number in numbers)
             {
-                Console.WriteLine(city);
+                Console.WriteLine(number);
             }
+
+
+
+
+
+
+
+
 
 
             #endregion
