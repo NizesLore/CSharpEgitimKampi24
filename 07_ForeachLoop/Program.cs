@@ -119,7 +119,7 @@ namespace _07_ForeachLoop
             //Öğrencilerin ortalamaları ve geçip kalma durumları
             for (int i = 0; i < studentCount; i++)
             {
-
+                Console.WriteLine($"{studentNames[i]} adlı öğrencinin ortalaması: {studentEaxmAvg[i]}");
             }
 
 
