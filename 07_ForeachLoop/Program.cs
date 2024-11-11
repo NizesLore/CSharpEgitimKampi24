@@ -67,12 +67,23 @@ namespace _07_ForeachLoop
             //}
             //Console.WriteLine("-----------------------");
 
-            string word = "Merhaba";
+            // string word = "Merhaba";
 
-           foreach (char c in word)
-            {
-                Console.WriteLine(c);
-            }
+            //foreach (char c in word)
+            // {
+            //     Console.WriteLine(c);
+            // }
+
+            #endregion
+
+            #region Ornek Sinav Sistemi
+
+            Console.WriteLine("***** C# Eğitim Kampı Sınav *****");
+            Console.WriteLine();
+            Console.WriteLine();
+            Console.WriteLine();
+            Console.WriteLine();
+            Console.WriteLine("-----------------------------");
 
             #endregion
 
