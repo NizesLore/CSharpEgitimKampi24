@@ -88,23 +88,39 @@ namespace _07_ForeachLoop
             //Sınıftaki öğrenci sayısını kullanıcıdan alma
             Console.WriteLine("-----------------------------");
             Console.Write("Sınıfınızda Kaç Öğrenci Var: ");
-            int studentCount=int.Parse(Console.ReadLine());
+            int studentCount = int.Parse(Console.ReadLine());
             Console.WriteLine("-----------------------------");
 
             //Öğrenci isimlerini ve not ortalamalarını saklayacak diziler
-            string[] studentNames=new string[studentCount];
-            double[] studentEaxmAvg=new double[studentCount];
+            string[] studentNames = new string[studentCount];
+            double[] studentEaxmAvg = new double[studentCount];
 
             for (int i = 0; i < studentCount; i++)
             {
-                Console.Write($"{i+1}. Öğrencinin İsmini Giriniz: ");
+                Console.Write($"{i + 1}. Öğrencinin İsmini Giriniz: ");
                 studentNames[i] = Console.ReadLine();
 
 
                 double totalExamResult = 0;
 
+                //Her öğrenci için 3 sınav notu girişi
+
+                for (int j = 0; j < 3; j++)
+                {
+                    Console.Write($"{studentNames[i]} isimli öğrencinin {j + 1}. sınav notunu giriniz: ");
+                    double value = double.Parse(Console.ReadLine());
+                    totalExamResult += value;  //Notları topluyoruz.
+
+                }
+                studentEaxmAvg[i] = totalExamResult / 3;
+
             }
 
+            //Öğrencilerin ortalamaları ve geçip kalma durumları
+            for (int i = 0; i < studentCount; i++)
+            {
+
+            }
 
 
             #endregion
