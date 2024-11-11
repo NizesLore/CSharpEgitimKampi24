@@ -91,6 +91,9 @@ namespace _07_ForeachLoop
             int studentCount=int.Parse(Console.ReadLine());
             Console.WriteLine("-----------------------------");
 
+            //Öğrenci isimlerini ve not ortalamalarını saklayacak diziler
+            string[] studentNames=new string[studentCount];
+            double[] studentEaxmAvg=new double[studentCount];
 
 
 
