@@ -83,10 +83,20 @@ namespace _07_ForeachLoop
             Console.WriteLine();
             Console.WriteLine();
             Console.WriteLine();
+
+
+            //Sınıftaki öğrenci sayısını kullanıcıdan alma
+            Console.WriteLine("-----------------------------");
+            Console.Write("Sınıfınızda Kaç Öğrenci Var: ");
+            int studentCount=int.Parse(Console.ReadLine());
             Console.WriteLine("-----------------------------");
 
-            #endregion
 
+
+
+
+
+            #endregion
             Console.Read();
 
         }
