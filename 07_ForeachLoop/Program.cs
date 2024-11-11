@@ -95,7 +95,15 @@ namespace _07_ForeachLoop
             string[] studentNames=new string[studentCount];
             double[] studentEaxmAvg=new double[studentCount];
 
+            for (int i = 0; i < studentCount; i++)
+            {
+                Console.Write($"{i+1}. Öğrencinin İsmini Giriniz: ");
+                studentNames[i] = Console.ReadLine();
 
+
+                double totalExamResult = 0;
+
+            }
 
 
 
