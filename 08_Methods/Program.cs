@@ -50,10 +50,19 @@ namespace _08_Methods
 
             #region Geriye Değer Döndürmeyen Parametreli Methodlar
 
-            void WriteMethod(string customerName)
+            //void WriteMethod(string customerName)
+            //{
+            //    Console.WriteLine(customerName);
+            //}
+            //WriteMethod("Mehmet YILDIRIM");
+
+            void CustomerCard(string name, string surname)
             {
-                Console.WriteLine(customerName);
+                Console.WriteLine("Müşteri: "+name+" "+surname);
             }
+
+            CustomerCard("Mehmet","YILDIZ");
+            CustomerCard("Ayşegül","KAYA");
 
 
 
