@@ -27,6 +27,9 @@ namespace _08_Methods
                 Console.WriteLine("Merve ÇINAR");
             }
             CustomerList();
+            CustomerList();
+            CustomerList();
+            CustomerList();
 
             #endregion
 
