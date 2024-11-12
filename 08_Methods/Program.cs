@@ -47,8 +47,7 @@ namespace _08_Methods
 
             #endregion
 
-
-            #region Geriye Değer Döndürmeyen Parametreli Methodlar
+            #region Geriye Değer Döndürmeyen String Parametreli Methodlar
 
             //void WriteMethod(string customerName)
             //{
@@ -56,14 +55,19 @@ namespace _08_Methods
             //}
             //WriteMethod("Mehmet YILDIRIM");
 
-            void CustomerCard(string name, string surname)
-            {
-                Console.WriteLine("Müşteri: "+name+" "+surname);
-            }
+            //void CustomerCard(string name, string surname)
+            //{
+            //    Console.WriteLine("Müşteri: "+name+" "+surname);
+            //}
 
-            CustomerCard("Mehmet","YILDIZ");
-            CustomerCard("Ayşegül","KAYA");
+            //CustomerCard("Mehmet","YILDIZ");
+            //CustomerCard("Ayşegül","KAYA");
 
+
+
+            #endregion
+
+            #region Geriye Değer Döndürmeyen Int Parametreli Methodlar
 
 
             #endregion
