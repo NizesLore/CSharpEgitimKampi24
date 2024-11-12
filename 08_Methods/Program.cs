@@ -13,7 +13,9 @@ namespace _08_Methods
 
             #region Methods
 
-
+            //()
+            //Geriye Değer Döndürmeyen Methodlar
+            //Customer --> Listele, ekle, sil, güncelle
 
 
 
