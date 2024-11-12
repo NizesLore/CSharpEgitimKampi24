@@ -11,15 +11,21 @@ namespace _08_Methods
         static void Main(string[] args)
         {
 
-            #region Methods
+            #region Void Methods
 
             //()
             //Geriye Değer Döndürmeyen Methodlar
             //Customer --> Listele, ekle, sil, güncelle
+            //Void
 
 
-
-
+            void CustomerList()
+            {
+                Console.WriteLine("Ali YILDIZ");
+                Console.WriteLine("Ayşe YILDIZ");
+                Console.WriteLine("Hakan ÖZTÜRK");
+                Console.WriteLine("Merve ÇINAR");
+            }
 
 
             #endregion
