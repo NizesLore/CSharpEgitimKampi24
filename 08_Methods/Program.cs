@@ -19,20 +19,45 @@ namespace _08_Methods
             //Void
 
 
-            void CustomerList()
-            {
-                Console.WriteLine("Ali YILDIZ");
-                Console.WriteLine("Ayşe YILDIZ");
-                Console.WriteLine("Hakan ÖZTÜRK");
-                Console.WriteLine("Merve ÇINAR");
-            }
-            CustomerList();
-            CustomerList();
-            CustomerList();
-            CustomerList();
+            //void CustomerList()
+            //{
+            //    Console.WriteLine("Ali YILDIZ");
+            //    Console.WriteLine("Ayşe YILDIZ");
+            //    Console.WriteLine("Hakan ÖZTÜRK");
+            //    Console.WriteLine("Merve ÇINAR");
+            //}
+            //CustomerList();
+            //CustomerList();
+            //CustomerList();
+            //CustomerList();
+
+
+            //void Sum()
+            //{
+            //    int x = 1;
+            //    int y = 2;
+            //    int z = x + y;
+            //    Console.WriteLine(z);
+            //}
+
+
+            //Sum();
+
+
 
             #endregion
 
+
+            #region Geriye Değer Döndürmeyen Parametreli Methodlar
+
+            void WriteMethod(string customerName)
+            {
+                Console.WriteLine(customerName);
+            }
+
+
+
+            #endregion
             Console.Read();
 
         }
