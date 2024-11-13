@@ -81,8 +81,11 @@ namespace _08_Methods
 
             #region Geriye Değer Döndüren Methodlar
 
-
-
+            string CustomerName()
+            {
+                return "Buse YILDIZ";
+            }
+            CustomerName();
 
             #endregion
             Console.Read();
