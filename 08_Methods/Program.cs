@@ -87,16 +87,32 @@ namespace _08_Methods
             //}
             //CustomerName();
 
-            Console.WriteLine("***************");
+            //Console.WriteLine("***************");
 
-            string StudentCard()
+            //string StudentCard()
+            //{
+            //    string name = "Ali";
+            //    string surname = "KAYA";
+            //    return name + " " + surname;
+            //}
+
+            //Console.WriteLine(StudentCard());
+
+
+            #endregion
+
+            #region Geriye Değer Döndüren Parametreli Methodlar
+
+            string CountryCard(string countryName, string capital, string flagColor)
             {
-                string name = "Ali";
-                string surname = "KAYA";
-                return name + " " + surname;
+                string cardInfo = "Ülke: " + countryName + "- Başkent: " + capital + "- Bayrak Rengi: " + flagColor;
+                return cardInfo;
+
             }
 
-            Console.WriteLine(StudentCard());
+
+
+
 
 
             #endregion
