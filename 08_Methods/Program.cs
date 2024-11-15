@@ -109,7 +109,8 @@ namespace _08_Methods
                 return cardInfo;
 
             }
-
+            string x, y, z;
+            Console.Write("Ülke adını giriniz: "); ;
 
 
 
