@@ -111,10 +111,15 @@ namespace _08_Methods
             }
             string x, y, z;
             Console.Write("Ülke adını giriniz: "); ;
+            x = Console.ReadLine();
 
+            Console.Write("Başkenti Giriniz: ");
+            y = Console.ReadLine();
 
+            Console.Write("Bayrak Rengini Giriniz: ");
+            z = Console.ReadLine();
 
-
+            Console.WriteLine(CountryCard(x, y, z));
 
             #endregion
 
