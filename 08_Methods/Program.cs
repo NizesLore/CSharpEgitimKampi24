@@ -101,32 +101,50 @@ namespace _08_Methods
 
             #endregion
 
-            #region Geriye Değer Döndüren Parametreli Methodlar
+            #region Geriye Değer Döndüren String Parametreli Methodlar
 
-            string CountryCard(string countryName, string capital, string flagColor)
-            {
-                string cardInfo = "Ülke: " + countryName + "- Başkent: " + capital + "- Bayrak Rengi: " + flagColor;
-                return cardInfo;
+            //string CountryCard(string countryName, string capital, string flagColor)
+            //{
+            //    string cardInfo = "Ülke: " + countryName + "- Başkent: " + capital + "- Bayrak Rengi: " + flagColor;
+            //    return cardInfo;
 
-            }
-            string x, y, z;
-            Console.Write("Ülke adını giriniz: "); ;
-            x = Console.ReadLine();
+            //}
+            //string x, y, z;
+            //Console.Write("Ülke adını giriniz: "); ;
+            //x = Console.ReadLine();
 
-            Console.Write("Başkenti Giriniz: ");
-            y = Console.ReadLine();
+            //Console.Write("Başkenti Giriniz: ");
+            //y = Console.ReadLine();
 
-            Console.Write("Bayrak Rengini Giriniz: ");
-            z = Console.ReadLine();
+            //Console.Write("Bayrak Rengini Giriniz: ");
+            //z = Console.ReadLine();
 
-            Console.WriteLine(CountryCard(x, y, z));
+            //Console.WriteLine(CountryCard(x, y, z));
 
-            Console.WriteLine(CountryCard("Türkiye", "Ankara", "Kırmızı-Beyaz"));
+            //Console.WriteLine(CountryCard("Türkiye", "Ankara", "Kırmızı-Beyaz"));
 
 
             #endregion
 
+            #region Geriye Değer Döndüren Int Parametreli Methodlar
 
+            int Sum(int number1, int number2)
+            {
+                int result = number1 + number2;
+                return result;
+            }
+
+            Console.WriteLine(Sum(45, 98));
+            Console.WriteLine(Sum(36, 25));
+            Console.WriteLine(Sum(44, 36));
+            Console.WriteLine(Sum(14, 20));
+            
+
+
+
+
+
+            #endregion
             Console.Read();
 
         }
