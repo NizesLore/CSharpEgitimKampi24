@@ -121,6 +121,9 @@ namespace _08_Methods
 
             Console.WriteLine(CountryCard(x, y, z));
 
+            Console.WriteLine(CountryCard("Türkiye", "Ankara", "Kırmızı-Beyaz"));
+
+
             #endregion
 
 
