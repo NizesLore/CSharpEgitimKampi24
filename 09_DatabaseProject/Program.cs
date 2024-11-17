@@ -10,6 +10,11 @@ namespace _09_DatabaseProject
     {
         static void Main(string[] args)
         {
+
+
+
+
+            Console.Read();
         }
     }
 }
