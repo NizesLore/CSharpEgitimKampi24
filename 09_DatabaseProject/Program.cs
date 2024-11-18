@@ -27,7 +27,7 @@ namespace _09_DatabaseProject
             SqlCommand command = new SqlCommand("Select * From TblCategory");
             SqlDataAdapter adapter = new SqlDataAdapter();
             DataTable dataTable =new DataTable();
-
+            adapter.Fill(dataTable);
 
             Console.Read();
         }
