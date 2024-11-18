@@ -24,7 +24,7 @@ namespace _09_DatabaseProject
 
             //SqlConnection connection = new SqlConnection(tableNumber);
             connection.Open();
-            SqlCommand comand=
+            SqlCommand command = new SqlCommand("Select * From TblCategory");
 
             Console.Read();
         }
