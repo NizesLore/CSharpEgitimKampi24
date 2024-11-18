@@ -23,7 +23,8 @@ namespace _09_DatabaseProject
             Console.WriteLine("-----------------------");
 
             //SqlConnection connection = new SqlConnection(tableNumber);
-
+            connection.Open();
+            SqlCommand comand=
 
             Console.Read();
         }
