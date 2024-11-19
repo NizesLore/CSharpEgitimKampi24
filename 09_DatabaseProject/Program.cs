@@ -36,6 +36,7 @@ namespace _09_DatabaseProject
                 {
                     Console.Write(item.ToString());
                 }
+                Console.WriteLine();
             }
 
 
