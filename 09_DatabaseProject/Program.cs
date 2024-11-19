@@ -34,7 +34,7 @@ namespace _09_DatabaseProject
             {
                 foreach (var item in row.ItemArray)
                 {
-                    Console.WriteLine(item.ToString());
+                    Console.Write(item.ToString());
                 }
             }
 
