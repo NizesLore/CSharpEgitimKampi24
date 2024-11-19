@@ -30,9 +30,12 @@ namespace _09_DatabaseProject
             adapter.Fill(dataTable);
             connection.Close();
 
-            foreach (var item in collection)
+            foreach (DataRow row in dataTable.Rows)
             {
-                Console.WriteLine(item);
+                foreach (var item in row.ItemArray)
+                {
+                    Console.WriteLine(item.ToString());
+                }
             }
 
 
