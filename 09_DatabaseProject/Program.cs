@@ -28,6 +28,10 @@ namespace _09_DatabaseProject
             SqlDataAdapter adapter = new SqlDataAdapter();
             DataTable dataTable =new DataTable();
             adapter.Fill(dataTable);
+            connection.Close();
+
+
+
 
             Console.Read();
         }
