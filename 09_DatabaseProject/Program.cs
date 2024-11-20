@@ -40,6 +40,8 @@ namespace _09_DatabaseProject
                 Console.WriteLine("..");
             }
 
+            SqlCommand command = new SqlCommand("Select * From TblCategory");
+
 
             Console.Read();
         }
