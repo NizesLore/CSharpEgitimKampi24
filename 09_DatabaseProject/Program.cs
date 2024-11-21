@@ -51,7 +51,11 @@ namespace _09_DatabaseProject
 
             Console.WriteLine("---------------------------");
             Console.WriteLine("Eklemek İstediğiniz Kategori Adı: ");
+            string categoryName =Console.ReadLine();
 
+
+            SqlConnection connection = new SqlConnection("Data Source=DESKTOP-R7AR1ND;initial " +
+                "catalog=EgitimKampiDb;integrated security=treu"); 
 
 
             Console.Read();
