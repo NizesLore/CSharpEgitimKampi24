@@ -43,6 +43,15 @@ namespace _09_DatabaseProject
             SqlCommand command = new SqlCommand("Select * From TblCategory");
 
 
+
+            //Crud--> Create-Read-Update-Delete
+            Console.WriteLine("***** Menü Sipariş İşlem Paneli");
+
+
+
+
+
+
             Console.Read();
         }
     }
