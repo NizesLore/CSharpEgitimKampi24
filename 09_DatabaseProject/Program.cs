@@ -55,7 +55,12 @@ namespace _09_DatabaseProject
 
 
             SqlConnection connection = new SqlConnection("Data Source=DESKTOP-R7AR1ND;initial " +
-                "catalog=EgitimKampiDb;integrated security=treu"); 
+                "catalog=EgitimKampiDb;integrated security=treu");
+
+            connection.Open();
+
+
+
 
 
             Console.Read();
