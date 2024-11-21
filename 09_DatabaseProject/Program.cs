@@ -59,7 +59,7 @@ namespace _09_DatabaseProject
 
             connection.Open();
             SqlCommand command = new SqlCommand("insert into TblCategory (CategoryName) values (@p1)", connection);
-
+            command.Parameters.AddWithValue("@p1",categoryName);
 
 
 
