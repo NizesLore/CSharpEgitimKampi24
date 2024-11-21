@@ -58,7 +58,7 @@ namespace _09_DatabaseProject
                 "catalog=EgitimKampiDb;integrated security=treu");
 
             connection.Open();
-
+            SqlCommand command = new SqlCommand("insert into TblCategory (CategoryName) values (@p1)", connection);
 
 
 
