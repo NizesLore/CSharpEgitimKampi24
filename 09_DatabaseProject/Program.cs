@@ -46,9 +46,11 @@ namespace _09_DatabaseProject
 
             //Crud--> Create-Read-Update-Delete
             Console.WriteLine("***** Menü Sipariş İşlem Paneli");
+            Console.WriteLine();
 
 
-
+            Console.WriteLine("---------------------------");
+            Console.WriteLine("Eklemek İstediğiniz Kategori Adı: ");
 
 
 
