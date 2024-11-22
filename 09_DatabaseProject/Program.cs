@@ -68,8 +68,26 @@ namespace _09_DatabaseProject
             //Console.WriteLine("Kategori başarıyla eklendi");
             #endregion
 
+            #region Urun Ekleme İslemi
+
+            string productName;
+            decimal productPrice;
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+            #endregion
             Console.Read();
         }
     }
