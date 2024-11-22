@@ -63,6 +63,8 @@ namespace _09_DatabaseProject
             command.ExecuteNonQuery();
             connection.Close();
 
+            Console.WriteLine("Kategori başarıyla eklendi");
+
             Console.Read();
         }
     }
