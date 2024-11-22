@@ -50,20 +50,25 @@ namespace _09_DatabaseProject
 
 
             Console.WriteLine("---------------------------");
-            Console.WriteLine("Eklemek İstediğiniz Kategori Adı: ");
-            string categoryName =Console.ReadLine();
+
+            #region Kategori Ekleme İslemi
+            //Console.WriteLine("Eklemek İstediğiniz Kategori Adı: ");
+            //string categoryName =Console.ReadLine();
 
 
-            SqlConnection connection = new SqlConnection("Data Source=DESKTOP-R7AR1ND;initial " +
-                "catalog=EgitimKampiDb;integrated security=treu");
+            //SqlConnection connection = new SqlConnection("Data Source=DESKTOP-R7AR1ND;initial " +
+            //    "catalog=EgitimKampiDb;integrated security=treu");
 
-            connection.Open();
-            SqlCommand command = new SqlCommand("insert into TblCategory (CategoryName) values (@p1)", connection);
-            command.Parameters.AddWithValue("@p1",categoryName);
-            command.ExecuteNonQuery();
-            connection.Close();
+            //connection.Open();
+            //SqlCommand command = new SqlCommand("insert into TblCategory (CategoryName) values (@p1)", connection);
+            //command.Parameters.AddWithValue("@p1",categoryName);
+            //command.ExecuteNonQuery();
+            //connection.Close();
 
-            Console.WriteLine("Kategori başarıyla eklendi");
+            //Console.WriteLine("Kategori başarıyla eklendi");
+            #endregion
+
+
 
             Console.Read();
         }
