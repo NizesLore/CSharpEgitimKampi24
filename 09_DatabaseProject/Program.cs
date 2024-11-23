@@ -77,7 +77,7 @@ namespace _09_DatabaseProject
             Console.WriteLine("Ürün Adı:      ");
             productName=Console.ReadLine();
             Console.Write("Ürün Fiyatı: ");
-
+            productPrice = decimal.Parse(Console.ReadLine());
 
 
 
