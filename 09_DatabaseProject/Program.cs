@@ -83,7 +83,8 @@ namespace _09_DatabaseProject
                 "catalog=EgitimKampiDb;integrated security=true");
 
             connection.Open();
-
+            SqlCommand command = new SqlCommand("insert into TblProduct(ProductName,ProductPrice,ProductStatus) values 
+                (@productName, @productPrice,@productStatus)",connection);
 
 
 
