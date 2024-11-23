@@ -19,14 +19,14 @@ namespace _09_DatabaseProject
             Console.WriteLine("3-Siparişler");
             Console.WriteLine("4-Çıkış Yap");
             Console.Write("Lütfen getirmek istediğiniz tablo numarasını giriniz: ");
-            tableNumber=Console.ReadLine();
+            tableNumber = Console.ReadLine();
             Console.WriteLine("-----------------------");
 
             //SqlConnection connection = new SqlConnection(tableNumber);
             connection.Open();
             SqlCommand command = new SqlCommand("Select * From TblCategory");
             SqlDataAdapter adapter = new SqlDataAdapter();
-            DataTable dataTable =new DataTable();
+            DataTable dataTable = new DataTable();
             adapter.Fill(dataTable);
             connection.Close();
 
@@ -72,20 +72,22 @@ namespace _09_DatabaseProject
 
             string productName;
             decimal productPrice;
-            bool productStatus;
+            //bool productStatus;
 
             Console.WriteLine("Ürün Adı:      ");
-            productName=Console.ReadLine();
+            productName = Console.ReadLine();
             Console.Write("Ürün Fiyatı: ");
             productPrice = decimal.Parse(Console.ReadLine());
 
-            SqlConnection connection=new SqlConnection("Data source=DESKTOP-R7AR1ND;initial " +
+            SqlConnection connection = new SqlConnection("Data source=DESKTOP-R7AR1ND;initial " +
                 "catalog=EgitimKampiDb;integrated security=true");
 
             connection.Open();
             SqlCommand command = new SqlCommand("insert into TblProduct(ProductName,ProductPrice,ProductStatus) values 
-                (@productName, @productPrice,@productStatus)",connection);
-
+                (@productName, @productPrice, @productStatus)",connection);
+            command.Parameters.AddWithValue("@productName",productName);
+            command.Parameters.AddWithValue("@productPrice",productPrice);
+            command.Parameters.AddWithValue("@productStatus",productStatus);
 
 
 
