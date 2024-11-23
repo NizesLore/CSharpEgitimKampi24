@@ -79,7 +79,8 @@ namespace _09_DatabaseProject
             Console.Write("Ürün Fiyatı: ");
             productPrice = decimal.Parse(Console.ReadLine());
 
-
+            SqlConnection connection=new SqlConnection("Data source=DESKTOP-R7AR1ND;initial " +
+                "catalog=EgitimKampiDb;integrated security=true");
 
 
 
