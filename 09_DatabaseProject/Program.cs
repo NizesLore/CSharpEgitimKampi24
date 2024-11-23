@@ -74,8 +74,9 @@ namespace _09_DatabaseProject
             decimal productPrice;
             bool productStatus;
 
-            Console.WriteLine("Eklemek istediğiniz ürün adı:      ");
+            Console.WriteLine("Ürün Adı:      ");
             productName=Console.ReadLine();
+            Console.Write("Ürün Fiyatı: ");
 
 
 
