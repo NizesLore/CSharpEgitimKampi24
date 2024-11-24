@@ -87,16 +87,23 @@ namespace _09_DatabaseProject
                 (@productName, @productPrice, @productStatus)",connection);
             command.Parameters.AddWithValue("@productName",productName);
             command.Parameters.AddWithValue("@productPrice",productPrice);
-            command.Parameters.AddWithValue("@productStatus",productStatus);
-
-
-
-
-
+            command.Parameters.AddWithValue("@productStatus",true);
+            command.ExecuteNonQuery();
+            connection.Close();
+            Console.Write("Ürün eklemesi başarılı! ");
 
 
 
             #endregion
+
+
+            #region Urun Listeleme Islemi
+
+
+
+            #endregion
+
+
             Console.Read();
         }
     }
