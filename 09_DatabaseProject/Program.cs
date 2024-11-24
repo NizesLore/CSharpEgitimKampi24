@@ -106,7 +106,7 @@ namespace _09_DatabaseProject
             SqlCommand command = new SqlCommand("Select * From TblProduct", connection);
             SqlDataAdapter adapter = new SqlDataAdapter(command);
             DataTable dataTable = new DataTable();
-
+            adapter.Fill(dataTable);
 
 
             connection.Close();
