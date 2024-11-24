@@ -103,6 +103,9 @@ namespace _09_DatabaseProject
                 "catalog=EgitimKampiDb;integrated security=true");
             connection.Open();
             SqlCommand command = new SqlCommand("Select * From TblProduct", connection);
+            SqlDataAdapter adapter = new SqlDataAdapter(command);
+
+
 
 
             connection.Close();
