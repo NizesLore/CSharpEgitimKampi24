@@ -85,9 +85,9 @@ namespace _09_DatabaseProject
             connection.Open();
             SqlCommand command = new SqlCommand("insert into TblProduct(ProductName,ProductPrice,ProductStatus) values 
                 (@productName, @productPrice, @productStatus)",connection);
-            command.Parameters.AddWithValue("@productName",productName);
-            command.Parameters.AddWithValue("@productPrice",productPrice);
-            command.Parameters.AddWithValue("@productStatus",true);
+            command.Parameters.AddWithValue("@productName", productName);
+            command.Parameters.AddWithValue("@productPrice", productPrice);
+            command.Parameters.AddWithValue("@productStatus", true);
             command.ExecuteNonQuery();
             connection.Close();
             Console.Write("Ürün eklemesi başarılı! ");
@@ -101,6 +101,21 @@ namespace _09_DatabaseProject
 
             SqlConnection connection = new SqlConnection("Data source=DESKTOP-R7AR1ND;initial " +
                 "catalog=EgitimKampiDb;integrated security=true");
+            connection.Open();
+            SqlCommand command = new SqlCommand("Select * From TblProduct", connection);
+
+
+            connection.Close();
+
+
+
+
+
+
+
+
+
+
 
             #endregion
 
