@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Data;
 using System.Data.SqlClient;
 using System.Linq;
 using System.Text;
@@ -104,7 +105,7 @@ namespace _09_DatabaseProject
             connection.Open();
             SqlCommand command = new SqlCommand("Select * From TblProduct", connection);
             SqlDataAdapter adapter = new SqlDataAdapter(command);
-
+            DataTable dataTable = new DataTable();
 
 
 
