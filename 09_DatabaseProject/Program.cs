@@ -128,8 +128,11 @@ namespace _09_DatabaseProject
             SqlConnection connection = new SqlConnection("Data source=DESKTOP-R7AR1ND;initial " +
             "catalog=EgitimKampiDb;integrated security=true");
 
+            connection.Open();
 
+            SqlCommand command = new SqlCommand("Delete From TblProduct Where ProductId=@productId");
 
+            connection.Close();
             #endregion
             Console.Read();
         }
