@@ -125,6 +125,10 @@ namespace _09_DatabaseProject
 
             #region Urun Silme İslemi
 
+            Console.WriteLine("Silinecek Urun Id: ");
+            int productId = int.Parse(Console.ReadLine());
+
+
             SqlConnection connection = new SqlConnection("Data source=DESKTOP-R7AR1ND;initial " +
             "catalog=EgitimKampiDb;integrated security=true");
 
