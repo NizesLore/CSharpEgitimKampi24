@@ -108,6 +108,14 @@ namespace _09_DatabaseProject
             DataTable dataTable = new DataTable();
             adapter.Fill(dataTable);
 
+            foreach (DataRow row in dataTable.Rows)
+            {
+
+            }
+
+
+
+
 
             connection.Close();
 
