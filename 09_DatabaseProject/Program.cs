@@ -135,6 +135,11 @@ namespace _09_DatabaseProject
             connection.Open();
 
             SqlCommand command = new SqlCommand("Delete From TblProduct Where ProductId=@productId");
+            command.Parameters.AddWithValue();
+
+
+
+
 
             connection.Close();
             #endregion
