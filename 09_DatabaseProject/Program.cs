@@ -134,7 +134,7 @@ namespace _09_DatabaseProject
 
             connection.Open();
 
-            SqlCommand command = new SqlCommand("Delete From TblProduct Where ProductId=@productId");
+            SqlCommand command = new SqlCommand("Delete From TblProduct Where ProductId=@productId",connection);
             command.Parameters.AddWithValue("@productId",productId);
             command.ExecuteNonQuery();
 
