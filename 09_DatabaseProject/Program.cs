@@ -125,27 +125,29 @@ namespace _09_DatabaseProject
 
             #region Urun Silme İslemi
 
-            Console.WriteLine("Silinecek Urun Id: ");
-            int productId = int.Parse(Console.ReadLine());
+            //Console.WriteLine("Silinecek Urun Id: ");
+            //int productId = int.Parse(Console.ReadLine());
 
 
-            SqlConnection connection = new SqlConnection("Data source=DESKTOP-R7AR1ND;initial " +
-            "catalog=EgitimKampiDb;integrated security=true");
+            //SqlConnection connection = new SqlConnection("Data source=DESKTOP-R7AR1ND;initial " +
+            //"catalog=EgitimKampiDb;integrated security=true");
 
-            connection.Open();
+            //connection.Open();
 
-            SqlCommand command = new SqlCommand("Delete From TblProduct Where ProductId=@productId",connection);
-            command.Parameters.AddWithValue("@productId",productId);
-            command.ExecuteNonQuery();
-
-
-            connection.Close();
+            //SqlCommand command = new SqlCommand("Delete From TblProduct Where ProductId=@productId",connection);
+            //command.Parameters.AddWithValue("@productId",productId);
+            //command.ExecuteNonQuery();
 
 
-            Console.WriteLine("Silme işlemi yapıldı!");
+            //connection.Close();
+
+
+            //Console.WriteLine("Silme işlemi yapıldı!");
 
 
             #endregion
+
+
             Console.Read();
         }
     }
