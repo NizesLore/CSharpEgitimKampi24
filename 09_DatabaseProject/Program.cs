@@ -136,7 +136,7 @@ namespace _09_DatabaseProject
 
             SqlCommand command = new SqlCommand("Delete From TblProduct Where ProductId=@productId");
             command.Parameters.AddWithValue("@productId",productId);
-
+            command.ExecuteNonQuery();
 
 
 
