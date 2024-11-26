@@ -139,9 +139,12 @@ namespace _09_DatabaseProject
             command.ExecuteNonQuery();
 
 
-
-
             connection.Close();
+
+
+            Console.WriteLine("Silme işlemi yapıldı!");
+
+
             #endregion
             Console.Read();
         }
