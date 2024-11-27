@@ -147,7 +147,7 @@ namespace _09_DatabaseProject
 
             #endregion
 
-            #region
+            #region Urun Guncelleme Islemi
 
             SqlConnection connection = new SqlConnection("Data source=DESKTOP-R7AR1ND;initial " +
             "catalog=EgitimKampiDb;integrated security=true");
