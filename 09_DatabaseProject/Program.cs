@@ -149,8 +149,15 @@ namespace _09_DatabaseProject
 
             #region Urun Guncelleme Islemi
 
+
+            int productId = int.Parse(Console.ReadLine());
+
+
+
+
+
             SqlConnection connection = new SqlConnection("Data source=DESKTOP-R7AR1ND;initial " +
-            "catalog=EgitimKampiDb;integrated security=true");
+                "Catalog=EgitimKampiDb;integrated security=true");
 
             connection.Open();
 
