@@ -149,7 +149,10 @@ namespace _09_DatabaseProject
 
             #region
 
+            SqlConnection connection = new SqlConnection("Data source=DESKTOP-R7AR1ND;initial " +
+            "catalog=EgitimKampiDb;integrated security=true");
 
+            connection.Open();
 
 
 
