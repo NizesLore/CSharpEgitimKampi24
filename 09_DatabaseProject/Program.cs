@@ -155,7 +155,7 @@ namespace _09_DatabaseProject
             connection.Open();
 
 
-
+            connection.Close();
             #endregion
             Console.Read();
         }
