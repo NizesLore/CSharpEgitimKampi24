@@ -151,7 +151,7 @@ namespace _09_DatabaseProject
 
 
             int productId = int.Parse(Console.ReadLine());
-
+            string productName=Console.ReadLine();
 
 
 
