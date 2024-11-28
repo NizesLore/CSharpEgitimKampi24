@@ -149,11 +149,11 @@ namespace _09_DatabaseProject
 
             #region Urun Guncelleme Islemi
 
-            Console.Write("Güncellenecek Üürn Id: ");
+            Console.Write("Güncellenecek Ürün Id: ");
             int productId = int.Parse(Console.ReadLine());
 
 
-
+            Console.Write("Güncellenecek Ürün Adı: ");
             string productName=Console.ReadLine();
             decimal productPrice = decimal.Parse(Console.ReadLine());
 
