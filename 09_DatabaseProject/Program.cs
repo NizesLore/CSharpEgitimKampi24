@@ -165,6 +165,12 @@ namespace _09_DatabaseProject
 
             connection.Open();
 
+            SqlCommand command = new SqlCommand("Update TblProduct Set ProductName=@productName,ProductPrice=@productPrice" +
+                "where ProductId=@productId", connection);
+            command.Parameters.
+
+
+
 
             connection.Close();
             #endregion
