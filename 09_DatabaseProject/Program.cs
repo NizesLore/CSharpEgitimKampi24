@@ -149,7 +149,7 @@ namespace _09_DatabaseProject
 
             #region Urun Guncelleme Islemi
 
-
+            Console.Write("Güncellenecek Üürn Id: ");
             int productId = int.Parse(Console.ReadLine());
 
 
