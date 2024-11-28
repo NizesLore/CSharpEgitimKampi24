@@ -152,9 +152,10 @@ namespace _09_DatabaseProject
             Console.Write("Güncellenecek Ürün Id: ");
             int productId = int.Parse(Console.ReadLine());
 
-
             Console.Write("Güncellenecek Ürün Adı: ");
             string productName=Console.ReadLine();
+
+            Console.Write("Güncellenecek Ürün Fiyatı: ");
             decimal productPrice = decimal.Parse(Console.ReadLine());
 
 
