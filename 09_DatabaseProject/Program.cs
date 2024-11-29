@@ -97,7 +97,6 @@ namespace _09_DatabaseProject
 
             #endregion
 
-
             #region Urun Listeleme Islemi
 
             //SqlConnection connection = new SqlConnection("Data source=DESKTOP-R7AR1ND;initial " +
@@ -149,31 +148,36 @@ namespace _09_DatabaseProject
 
             #region Urun Guncelleme Islemi
 
-            Console.Write("Güncellenecek Ürün Id: ");
-            int productId = int.Parse(Console.ReadLine());
+            //Console.Write("Güncellenecek Ürün Id: ");
+            //int productId = int.Parse(Console.ReadLine());
 
-            Console.Write("Güncellenecek Ürün Adı: ");
-            string productName=Console.ReadLine();
+            //Console.Write("Güncellenecek Ürün Adı: ");
+            //string productName = Console.ReadLine();
 
-            Console.Write("Güncellenecek Ürün Fiyatı: ");
-            decimal productPrice = decimal.Parse(Console.ReadLine());
-
-
-
-            SqlConnection connection = new SqlConnection("Data source=DESKTOP-R7AR1ND;initial " +
-                "Catalog=EgitimKampiDb;integrated security=true");
-
-            connection.Open();
-
-            SqlCommand command = new SqlCommand("Update TblProduct Set ProductName=@productName,ProductPrice=@productPrice" +
-                "where ProductId=@productId", connection);
-            command.Parameters.
+            //Console.Write("Güncellenecek Ürün Fiyatı: ");
+            //decimal productPrice = decimal.Parse(Console.ReadLine());
 
 
 
+            //SqlConnection connection = new SqlConnection("Data source=DESKTOP-R7AR1ND;initial " +
+            //    "Catalog=EgitimKampiDb;integrated security=true");
 
-            connection.Close();
+            //connection.Open();
+
+            //SqlCommand command = new SqlCommand("Update TblProduct Set ProductName=@productName,ProductPrice=@productPrice" +
+            //    "where ProductId=@productId", connection);
+            //command.Parameters.AddWithValue("@productName", productName);
+            //command.Parameters.AddWithValue("@productPrice", productPrice);
+            //command.Parameters.AddWithValue("@productId", productId);
+            //command.ExecuteNonQuery();
+
+            //connection.Close();
+
+            //Console.WriteLine("Güncelleme başarılı! ");
             #endregion
+
+            Console.WriteLine();
+
             Console.Read();
         }
     }
