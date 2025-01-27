@@ -176,16 +176,10 @@ namespace _09_DatabaseProject
             //Console.WriteLine("Güncelleme başarılı! ");
             #endregion
 
+            Console.WriteLine();
 
 
 
-            Console.WriteLine();
-            Console.WriteLine();
-            Console.WriteLine();
-            Console.WriteLine();
-            Console.WriteLine();
-            Console.WriteLine();
-            Console.WriteLine();
 
             Console.Read();
         }
