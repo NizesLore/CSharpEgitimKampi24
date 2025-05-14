@@ -12,6 +12,12 @@ namespace _09_DatabaseProject
     {
         static void Main(string[] args)
         {
+            //Ado.net
+
+            Console.WriteLine("***** C# Veri Tabanlı Ürün-Kategori Bilgi Sistemi *****");
+            Console.WriteLine();
+            Console.WriteLine();
+
 
             string tableNumber;
             Console.WriteLine("-----------------------");
@@ -23,13 +29,14 @@ namespace _09_DatabaseProject
             tableNumber = Console.ReadLine();
             Console.WriteLine("-----------------------");
 
-            //SqlConnection connection = new SqlConnection(tableNumber);
+            SqlConnection connection = new SqlConnection("Data Source=DESKTOP-OJIS4NU;initial Catalog=EgitimKampiDb;integrated security=true");
             connection.Open();
-            SqlCommand command = new SqlCommand("Select * From TblCategory");
-            SqlDataAdapter adapter = new SqlDataAdapter();
+            SqlCommand command = new SqlCommand("Select * From TblCategory",connection);
+            SqlDataAdapter adapter = new SqlDataAdapter(command);
             DataTable dataTable = new DataTable();
             adapter.Fill(dataTable);
             connection.Close();
+
 
             foreach (DataRow row in dataTable.Rows)
             {
@@ -41,24 +48,23 @@ namespace _09_DatabaseProject
                 Console.WriteLine("..");
             }
 
-            SqlCommand command = new SqlCommand("Select * From TblCategory");
+            //SqlCommand command = new SqlCommand("Select * From TblCategory");
 
 
 
             //Crud--> Create-Read-Update-Delete
-            Console.WriteLine("***** Menü Sipariş İşlem Paneli");
-            Console.WriteLine();
+            //Console.WriteLine("***** Menü Sipariş İşlem Paneli");*
+            //Console.WriteLine();*
 
 
-            Console.WriteLine("---------------------------");
+            //Console.WriteLine("---------------------------");*
 
-            #region Kategori Ekleme İslemi
+            //#region Kategori Ekleme İslemi*
             //Console.WriteLine("Eklemek İstediğiniz Kategori Adı: ");
             //string categoryName =Console.ReadLine();
 
 
-            //SqlConnection connection = new SqlConnection("Data Source=DESKTOP-R7AR1ND;initial " +
-            //    "catalog=EgitimKampiDb;integrated security=treu");
+
 
             //connection.Open();
             //SqlCommand command = new SqlCommand("insert into TblCategory (CategoryName) values (@p1)", connection);
@@ -67,37 +73,37 @@ namespace _09_DatabaseProject
             //connection.Close();
 
             //Console.WriteLine("Kategori başarıyla eklendi");
-            #endregion
+            //#endregion
 
-            #region Urun Ekleme İslemi
+            //#region Urun Ekleme İslemi*
 
-            string productName;
-            decimal productPrice;
-            //bool productStatus;
+            //string productName;*
+            //decimal productPrice;*
+            ////bool productStatus;
 
-            Console.WriteLine("Ürün Adı:      ");
-            productName = Console.ReadLine();
-            Console.Write("Ürün Fiyatı: ");
-            productPrice = decimal.Parse(Console.ReadLine());
+            //Console.WriteLine("Ürün Adı:      ");*
+            //productName = Console.ReadLine();*
+            //Console.Write("Ürün Fiyatı: ");*
+            //productPrice = decimal.Parse(Console.ReadLine());*
 
-            SqlConnection connection = new SqlConnection("Data source=DESKTOP-R7AR1ND;initial " +
-                "catalog=EgitimKampiDb;integrated security=true");
+            //SqlConnection connection = new SqlConnection("Data source=DESKTOP-R7AR1ND;initial " +
+            //    "catalog=EgitimKampiDb;integrated security=true");*
 
-            connection.Open();
-            SqlCommand command = new SqlCommand("insert into TblProduct(ProductName,ProductPrice,ProductStatus) values 
-                (@productName, @productPrice, @productStatus)",connection);
-            command.Parameters.AddWithValue("@productName", productName);
-            command.Parameters.AddWithValue("@productPrice", productPrice);
-            command.Parameters.AddWithValue("@productStatus", true);
-            command.ExecuteNonQuery();
-            connection.Close();
-            Console.Write("Ürün eklemesi başarılı! ");
+            //connection.Open();*
+            //SqlCommand command = new SqlCommand("insert into TblProduct(ProductName,ProductPrice,ProductStatus) values 
+            //    (@productName, @productPrice, @productStatus)",connection);*
+            //command.Parameters.AddWithValue("@productName", productName);*
+            //command.Parameters.AddWithValue("@productPrice", productPrice);*
+            //command.Parameters.AddWithValue("@productStatus", true);*
+            //command.ExecuteNonQuery();*
+            //connection.Close();*
+            //Console.Write("Ürün eklemesi başarılı! ");*
 
 
 
-            #endregion
+            //#endregion
 
-            #region Urun Listeleme Islemi
+            //#region Urun Listeleme Islemi*
 
             //SqlConnection connection = new SqlConnection("Data source=DESKTOP-R7AR1ND;initial " +
             //    "catalog=EgitimKampiDb;integrated security=true");
@@ -120,9 +126,9 @@ namespace _09_DatabaseProject
             //connection.Close();
 
 
-            #endregion
+            //#endregion
 
-            #region Urun Silme İslemi
+            //#region Urun Silme İslemi*
 
             //Console.WriteLine("Silinecek Urun Id: ");
             //int productId = int.Parse(Console.ReadLine());
@@ -144,9 +150,9 @@ namespace _09_DatabaseProject
             //Console.WriteLine("Silme işlemi yapıldı!");
 
 
-            #endregion
+            //#endregion
 
-            #region Urun Guncelleme Islemi
+            //#region Urun Guncelleme Islemi*
 
             //Console.Write("Güncellenecek Ürün Id: ");
             //int productId = int.Parse(Console.ReadLine());
@@ -174,18 +180,11 @@ namespace _09_DatabaseProject
             //connection.Close();
 
             //Console.WriteLine("Güncelleme başarılı! ");
-            #endregion
+            // #endregion
 
 
-            Console.WriteLine();
-            Console.WriteLine();
-            Console.WriteLine();
-            Console.WriteLine();
-            Console.WriteLine();
-            Console.WriteLine();
-            Console.WriteLine();
-            Console.WriteLine();
 
+            Console.WriteLine();
 
 
             Console.Read();
