@@ -47,31 +47,8 @@ namespace _09_DatabaseProject
                 Console.WriteLine();
                 Console.WriteLine("..");
             }
-
+                  
             
-
-
-            
-         
-
-            
-
-            
-
-
-            //SqlCommand command = new SqlCommand("insert into TblProduct(ProductName,ProductPrice,ProductStatus) values 
-            //    (@productName, @productPrice, @productStatus)",connection);*
-            //command.Parameters.AddWithValue("@productName", productName);*
-            //command.Parameters.AddWithValue("@productPrice", productPrice);*
-            //command.Parameters.AddWithValue("@productStatus", true);*
-            //command.ExecuteNonQuery();*
-            //connection.Close();*
-            //Console.Write("Ürün eklemesi başarılı! ");*
-
-
-
-            //#endregion
-
             //#region Urun Listeleme Islemi*
 
             //SqlConnection connection = new SqlConnection("Data source=DESKTOP-R7AR1ND;initial " +
