@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Microsoft.Win32;
+using System;
 using System.Collections.Generic;
 using System.Data.SqlClient;
 using System.Linq;
@@ -12,7 +13,7 @@ namespace _10_DatabaseCrud1
         static void Main(string[] args)
         {
             //Crud--> Create-Read-Update-Delete
-
+            
 
             Console.WriteLine("***** Menü Sipariş İşlem Paneli *****");
             Console.WriteLine();
@@ -20,7 +21,21 @@ namespace _10_DatabaseCrud1
 
             Console.WriteLine("---------------------------");
 
+            #region Kategori Ekleme İşlemi
+            //connection.Open();
+            //SqlCommand command = new SqlCommand("Select * From TblCategory");
+            //SqlCommand command = new SqlCommand("insert into TblCategory (CategoryName) values (@p1)", connection);
+            //command.Parameters.AddWithValue("@p1",categoryName);
+            //command.ExecuteNonQuery();
+            //connection.Close();
+
+            //Console.WriteLine("Kategori başarıyla eklendi");
+            #endregion
+
+
             #region Ürün Ekleme İslemi*
+
+
             //Console.WriteLine("Eklemek İstediğiniz Ürün Adı: ");
             //string productName = Console.ReadLine();
 
@@ -50,10 +65,13 @@ namespace _10_DatabaseCrud1
             
             SqlConnection connection = new SqlConnection("Data source=(localdb)\\MSSQLLocalDB; initial catalog=EgitimKampiDb;integrated security=true");
             connection.Open();
-            SqlCommand command = new SqlCommand("insert into TblProduct (ProductName, ProductPrice,ProdutStatus) valaues (@productName,@productPrice,@productStatus)", connection);
-           command.
-
-
+            SqlCommand command = new SqlCommand("insert into TblProduct (ProductName, ProductPrice,ProductStatus) values (@productName,@productPrice,@productStatus)", connection);
+            command.Parameters.AddWithValue("@productName", productName);
+            command.Parameters.AddWithValue("@productPrice",productPrice);
+            command.Parameters.AddWithValue("@productStatus", true);
+            command.ExecuteNonQuery();
+            connection.Close();
+            Console.Write("Ürün eklemesi başarılı!");
 
 
             #endregion

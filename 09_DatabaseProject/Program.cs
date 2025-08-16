@@ -31,7 +31,7 @@ namespace _09_DatabaseProject
 
             SqlConnection connection = new SqlConnection("Data Source=(localdb)\\MSSQLLocalDB;initial Catalog=EgitimKampiDb;integrated security=true");
             connection.Open();
-            SqlCommand command = new SqlCommand("Select * From TblCategory",connection);
+            SqlCommand command = new SqlCommand("Select * From TblCategory", connection);
             SqlDataAdapter adapter = new SqlDataAdapter(command);
             DataTable dataTable = new DataTable();
             adapter.Fill(dataTable);
@@ -48,30 +48,17 @@ namespace _09_DatabaseProject
                 Console.WriteLine("..");
             }
 
-            //SqlCommand command = new SqlCommand("Select * From TblCategory");
+            
 
-                   
-                        //connection.Open();
-            //SqlCommand command = new SqlCommand("insert into TblCategory (CategoryName) values (@p1)", connection);
-            //command.Parameters.AddWithValue("@p1",categoryName);
-            //command.ExecuteNonQuery();
-            //connection.Close();
-
-            //Console.WriteLine("Kategori başarıyla eklendi");
-            //#endregion
-
-            //#region Urun Ekleme İslemi*
-
-            //string productName;*
-            //decimal productPrice;*
-            ////bool productStatus;
-
-            //Console.WriteLine("Ürün Adı:      ");*
-            //productName = Console.ReadLine();*
-            //Console.Write("Ürün Fiyatı: ");*
-            //productPrice = decimal.Parse(Console.ReadLine());*
 
             
+         
+
+            
+
+            
+
+
             //SqlCommand command = new SqlCommand("insert into TblProduct(ProductName,ProductPrice,ProductStatus) values 
             //    (@productName, @productPrice, @productStatus)",connection);*
             //command.Parameters.AddWithValue("@productName", productName);*
@@ -165,7 +152,7 @@ namespace _09_DatabaseProject
             // #endregion
 
 
-            
+
 
             Console.Read();
         }
