@@ -29,7 +29,7 @@ namespace _09_DatabaseProject
             tableNumber = Console.ReadLine();
             Console.WriteLine("-----------------------");
 
-            SqlConnection connection = new SqlConnection("Data Source=DESKTOP-OJIS4NU;initial Catalog=EgitimKampiDb;integrated security=true");
+            SqlConnection connection = new SqlConnection("Data Source=(localdb)\\MSSQLLocalDB;initial Catalog=EgitimKampiDb;integrated security=true");
             connection.Open();
             SqlCommand command = new SqlCommand("Select * From TblCategory",connection);
             SqlDataAdapter adapter = new SqlDataAdapter(command);
@@ -50,23 +50,8 @@ namespace _09_DatabaseProject
 
             //SqlCommand command = new SqlCommand("Select * From TblCategory");
 
-
-
-            //Crud--> Create-Read-Update-Delete
-            //Console.WriteLine("***** Menü Sipariş İşlem Paneli");*
-            //Console.WriteLine();*
-
-
-            //Console.WriteLine("---------------------------");*
-
-            //#region Kategori Ekleme İslemi*
-            //Console.WriteLine("Eklemek İstediğiniz Kategori Adı: ");
-            //string categoryName =Console.ReadLine();
-
-
-
-
-            //connection.Open();
+                   
+                        //connection.Open();
             //SqlCommand command = new SqlCommand("insert into TblCategory (CategoryName) values (@p1)", connection);
             //command.Parameters.AddWithValue("@p1",categoryName);
             //command.ExecuteNonQuery();
@@ -86,10 +71,7 @@ namespace _09_DatabaseProject
             //Console.Write("Ürün Fiyatı: ");*
             //productPrice = decimal.Parse(Console.ReadLine());*
 
-            //SqlConnection connection = new SqlConnection("Data source=DESKTOP-R7AR1ND;initial " +
-            //    "catalog=EgitimKampiDb;integrated security=true");*
-
-            //connection.Open();*
+            
             //SqlCommand command = new SqlCommand("insert into TblProduct(ProductName,ProductPrice,ProductStatus) values 
             //    (@productName, @productPrice, @productStatus)",connection);*
             //command.Parameters.AddWithValue("@productName", productName);*
@@ -183,14 +165,7 @@ namespace _09_DatabaseProject
             // #endregion
 
 
-            Console.WriteLine();
-            Console.WriteLine();
-            Console.WriteLine();
-            Console.WriteLine();
-            Console.WriteLine();
-            Console.WriteLine();
-            Console.WriteLine();
-            Console.WriteLine();
+            
 
             Console.Read();
         }
