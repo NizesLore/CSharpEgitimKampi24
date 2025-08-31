@@ -20,6 +20,9 @@ namespace _10_DatabaseCrud1
 
 
             Console.WriteLine("---------------------------");
+            Console.Write("Eklemek İstediğiniz Kategori Adı: ");
+
+
 
             #region Kategori Ekleme İşlemi
             //connection.Open();
