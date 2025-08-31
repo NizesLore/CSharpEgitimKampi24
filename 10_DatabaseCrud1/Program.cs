@@ -21,6 +21,7 @@ namespace _10_DatabaseCrud1
 
             Console.WriteLine("---------------------------");
             Console.Write("Eklemek İstediğiniz Kategori Adı: ");
+            string categoryName=Console.ReadLine();
 
 
 
