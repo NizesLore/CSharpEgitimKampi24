@@ -49,30 +49,7 @@ namespace _09_DatabaseProject
             }
 
 
-            #region Urun Listeleme Islemi*
-
-            //SqlConnection connection = new SqlConnection("Data source=DESKTOP-R7AR1ND;initial " +
-            //    "catalog=EgitimKampiDb;integrated security=true");
-            //connection.Open();
-            //SqlCommand command = new SqlCommand("Select * From TblProduct", connection);
-            //SqlDataAdapter adapter = new SqlDataAdapter(command);
-            //DataTable dataTable = new DataTable();
-            //adapter.Fill(dataTable);
-
-            //foreach (DataRow row in dataTable.Rows)
-            //{
-            //    foreach (var item in row.ItemArray)
-            //    {
-            //        Console.Write(item.ToString() + " ");
-            //    }
-            //    Console.WriteLine();
-            //}
-
-
-            //connection.Close();
-
-
-            #endregion
+            
 
             #region Urun Silme İslemi*
 
