@@ -47,9 +47,9 @@ namespace _09_DatabaseProject
                 Console.WriteLine();
                 Console.WriteLine("..");
             }
-                  
-            
-            //#region Urun Listeleme Islemi*
+
+
+            #region Urun Listeleme Islemi*
 
             //SqlConnection connection = new SqlConnection("Data source=DESKTOP-R7AR1ND;initial " +
             //    "catalog=EgitimKampiDb;integrated security=true");
@@ -72,9 +72,9 @@ namespace _09_DatabaseProject
             //connection.Close();
 
 
-            //#endregion
+            #endregion
 
-            //#region Urun Silme İslemi*
+            #region Urun Silme İslemi*
 
             //Console.WriteLine("Silinecek Urun Id: ");
             //int productId = int.Parse(Console.ReadLine());
@@ -96,9 +96,9 @@ namespace _09_DatabaseProject
             //Console.WriteLine("Silme işlemi yapıldı!");
 
 
-            //#endregion
+            #endregion
 
-            //#region Urun Guncelleme Islemi*
+            #region Urun Guncelleme Islemi*
 
             //Console.Write("Güncellenecek Ürün Id: ");
             //int productId = int.Parse(Console.ReadLine());
@@ -126,7 +126,7 @@ namespace _09_DatabaseProject
             //connection.Close();
 
             //Console.WriteLine("Güncelleme başarılı! ");
-            // #endregion
+            #endregion
 
 
 
