@@ -89,8 +89,10 @@ namespace _10_DatabaseCrud1
             connection.Open();
             SqlCommand command = new SqlCommand("Select * From TblProduct", connection);
             SqlDataAdapter adapter = new SqlDataAdapter(command); //SqlDataAdapter --> Sql den verileri cekerken veri listeleme sırasında
-                                                                  //bir kopru gorevi goren bir KOMUT. Bizim icin SQL den verileri c# tarafina cekecek olan bir kopru gorevi gorcek
-            DataTable dataTable = new DataTable();
+                                                                  //bir kopru gorevi goren bir KOMUT. Bizim icin SQL den verileri c# tarafina
+                                                                  //cekecek olan bir kopru gorevi gorcek
+            DataTable dataTable = new DataTable();       // Verileri hafizaya (gecici bellege) alabilmek icin
+                                                         // DataTable isminde bir sinif var
             adapter.Fill(dataTable);
 
             foreach (DataRow row in dataTable.Rows)
