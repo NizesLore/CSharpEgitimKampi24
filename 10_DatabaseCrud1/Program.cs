@@ -65,7 +65,7 @@ namespace _10_DatabaseCrud1
             Console.Write("Ürün Adı: ");
             productName = Console.ReadLine();
             Console.Write("Ürün Fiyatı: ");
-            productPrice = decimal.Parse(Console.ReadLine());
+            productPrice = decimal.Parse(Console.ReadLine()); //decimal e donusturmek gerek
 
             SqlConnection connection = new SqlConnection("Data source=(localdb)\\MSSQLLocalDB; " +
                 "initial catalog=EgitimKampiDb;integrated security=true");
@@ -75,7 +75,7 @@ namespace _10_DatabaseCrud1
             command.Parameters.AddWithValue("@productName", productName);
             command.Parameters.AddWithValue("@productPrice", productPrice);
             command.Parameters.AddWithValue("@productStatus", true);
-            command.ExecuteNonQuery();
+            command.ExecuteNonQuery(); //Degisiklikleri kaydet ve bunu veri tabanina yansit, anlamındadır.
             connection.Close();
             Console.Write("Ürün eklemesi başarılı!");
 
