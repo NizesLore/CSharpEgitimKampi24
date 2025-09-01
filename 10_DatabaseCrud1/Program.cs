@@ -56,7 +56,6 @@ namespace _10_DatabaseCrud1
 
             #endregion
 
-
             #region Ürün Birden Çok Özellikli Ekleme işlemi
 
             //string productName;
@@ -84,30 +83,81 @@ namespace _10_DatabaseCrud1
 
             #region Urun Listeleme Islemi*
 
-            SqlConnection connection = new SqlConnection("Data source=(localdb)\\MSSQLLocalDB;initial " +
-                "catalog=EgitimKampiDb;integrated security=true");
-            connection.Open();
-            SqlCommand command = new SqlCommand("Select * From TblProduct", connection);
-            SqlDataAdapter adapter = new SqlDataAdapter(command); //SqlDataAdapter --> Sql den verileri cekerken veri listeleme sırasında
-                                                                  //bir kopru gorevi goren bir KOMUT. Bizim icin SQL den verileri c# tarafina
-                                                                  //cekecek olan bir kopru gorevi gorcek
-            DataTable dataTable = new DataTable();       // Verileri hafizaya (gecici bellege) alabilmek icin
-                                                         // DataTable isminde bir sinif var
-            adapter.Fill(dataTable);
+            //SqlConnection connection = new SqlConnection("Data source=(localdb)\\MSSQLLocalDB;initial " +
+            //    "catalog=EgitimKampiDb;integrated security=true");
+            //connection.Open();
+            //SqlCommand command = new SqlCommand("Select * From TblProduct", connection);
+            //SqlDataAdapter adapter = new SqlDataAdapter(command); //SqlDataAdapter --> Sql den verileri cekerken veri listeleme sırasında
+            //                                                      //bir kopru gorevi goren bir KOMUT. Bizim icin SQL den verileri c# tarafina
+            //                                                      //cekecek olan bir kopru gorevi gorcek
+            //DataTable dataTable = new DataTable();       // Verileri hafizaya (gecici bellege) alabilmek icin
+            //                                             // DataTable isminde bir sinif var
+            //adapter.Fill(dataTable);
 
-            foreach (DataRow row in dataTable.Rows)
-            {
-                foreach (var item in row.ItemArray)
-                {
-                    Console.Write(item.ToString() + " ");
-                }
-                Console.WriteLine();
-            }
+            //foreach (DataRow row in dataTable.Rows)
+            //{
+            //    foreach (var item in row.ItemArray)
+            //    {
+            //        Console.Write(item.ToString() + " ");
+            //    }
+            //    Console.WriteLine();
+            //}
 
-            connection.Close();
+            //connection.Close();
 
             #endregion
 
+            #region Urun Silme İslemi*
+
+            //Console.WriteLine("Silinecek Urun Id: ");
+            //int productId = int.Parse(Console.ReadLine());
+
+
+            //SqlConnection connection = new SqlConnection("Data source=DESKTOP-R7AR1ND;initial " +
+            //"catalog=EgitimKampiDb;integrated security=true");
+
+            //connection.Open();
+
+            //SqlCommand command = new SqlCommand("Delete From TblProduct Where ProductId=@productId", connection);
+            //command.Parameters.AddWithValue("@productId", productId);
+            //command.ExecuteNonQuery();
+
+            //connection.Close();
+
+            //Console.WriteLine("Silme işlemi yapıldı!");
+
+
+            #endregion
+
+            #region Urun Guncelleme Islemi*
+
+            Console.Write("Güncellenecek Ürün Id: ");
+            int productId = int.Parse(Console.ReadLine());
+
+            Console.Write("Güncellenecek Ürün Adı: ");
+            string productName = Console.ReadLine();
+
+            Console.Write("Güncellenecek Ürün Fiyatı: ");
+            decimal productPrice = decimal.Parse(Console.ReadLine());
+
+
+
+            SqlConnection connection = new SqlConnection("Data source=DESKTOP-R7AR1ND;initial " +
+                "Catalog=EgitimKampiDb;integrated security=true");
+
+            connection.Open();
+
+            SqlCommand command = new SqlCommand("Update TblProduct Set ProductName=@productName," +
+                "ProductPrice=@productPrice where ProductId=@productId", connection);
+            command.Parameters.AddWithValue("@productName", productName);
+            command.Parameters.AddWithValue("@productPrice", productPrice);
+            command.Parameters.AddWithValue("@productId", productId);
+            command.ExecuteNonQuery();
+
+            connection.Close();
+
+            Console.WriteLine("Güncelleme başarılı! ");
+            #endregion
 
 
             Console.Read();
