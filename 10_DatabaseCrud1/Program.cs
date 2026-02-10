@@ -37,7 +37,6 @@ namespace _10_DatabaseCrud1
             //Console.WriteLine("Kategori başarıyla eklendi");
             #endregion
 
-
             #region Ürün Ekleme İslemi*
 
 
@@ -113,7 +112,7 @@ namespace _10_DatabaseCrud1
             //int productId = int.Parse(Console.ReadLine());
 
 
-            //SqlConnection connection = new SqlConnection("Data source=DESKTOP-R7AR1ND;initial " +
+            //SqlConnection connection = new SqlConnection("Data source=(localdb)\\MSSQLLocalDB;initial " +
             //"catalog=EgitimKampiDb;integrated security=true");
 
             //connection.Open();
@@ -131,36 +130,36 @@ namespace _10_DatabaseCrud1
 
             #region Urun Guncelleme Islemi*
 
-            Console.Write("Güncellenecek Ürün Id: ");
-            int productId = int.Parse(Console.ReadLine());
+            //Console.Write("Güncellenecek Ürün Id: ");
+            //int productId = int.Parse(Console.ReadLine());
 
-            Console.Write("Güncellenecek Ürün Adı: ");
-            string productName = Console.ReadLine();
+            //Console.Write("Güncellenecek Ürün Adı: ");
+            //string productName = Console.ReadLine();
 
-            Console.Write("Güncellenecek Ürün Fiyatı: ");
-            decimal productPrice = decimal.Parse(Console.ReadLine());
+            //Console.Write("Güncellenecek Ürün Fiyatı: ");
+            //decimal productPrice = decimal.Parse(Console.ReadLine());
 
 
 
-            SqlConnection connection = new SqlConnection("Data source=DESKTOP-R7AR1ND;initial " +
-                "Catalog=EgitimKampiDb;integrated security=true");
+            //SqlConnection connection = new SqlConnection("Data source=(localdb)\\MSSQLLocalDB;initial " +
+            //    "Catalog=EgitimKampiDb;integrated security=true");
 
-            connection.Open();
+            //connection.Open();
 
-            SqlCommand command = new SqlCommand("Update TblProduct Set ProductName=@productName," +
-                "ProductPrice=@productPrice where ProductId=@productId", connection);
-            command.Parameters.AddWithValue("@productName", productName);
-            command.Parameters.AddWithValue("@productPrice", productPrice);
-            command.Parameters.AddWithValue("@productId", productId);
-            command.ExecuteNonQuery();
+            //SqlCommand command = new SqlCommand("Update TblProduct Set ProductName=@productName," +
+            //    "ProductPrice=@productPrice where ProductId=@productId", connection);
+            //command.Parameters.AddWithValue("@productName", productName);
+            //command.Parameters.AddWithValue("@productPrice", productPrice);
+            //command.Parameters.AddWithValue("@productId", productId);
+            //command.ExecuteNonQuery();
 
-            connection.Close();
+            //connection.Close();
 
-            Console.WriteLine("Güncelleme başarılı! ");
+            //Console.WriteLine("Güncelleme başarılı! ");
             #endregion
 
 
-            Console.Read();
+            Console.Read(); 
 
 
 
