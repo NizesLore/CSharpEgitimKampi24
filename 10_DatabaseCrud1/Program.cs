@@ -43,7 +43,8 @@ namespace _10_DatabaseCrud1
             //Console.WriteLine("Eklemek İstediğiniz Ürün Adı: ");
             //string productName = Console.ReadLine();
 
-            //SqlConnection connection = new SqlConnection("Data Source = (localdb)\\MSSQLLocalDB; initial Catalog = EgitimKampiDb; integrated security = true");
+            //SqlConnection connection = new SqlConnection("Data Source = (localdb)\\MSSQLLocalDB;
+            //initial Catalog = EgitimKampiDb; integrated security = true");
 
             //connection.Open();
             //SqlCommand command = new SqlCommand("insert into TblProduct (productName) values (@p1)", connection);
@@ -159,7 +160,7 @@ namespace _10_DatabaseCrud1
             #endregion
 
 
-            Console.Read();
+            Console.Read();    
 
 
 
