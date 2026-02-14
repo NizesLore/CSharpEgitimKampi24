@@ -98,7 +98,7 @@ namespace _10_DatabaseCrud1
             //{
             //    foreach (var item in row.ItemArray)
             //    {
-            //        Console.Write(item.ToString() + " ");
+            //        Console.Write(item.ToString() + " ");  
             //    }
             //    Console.WriteLine();
             //}
