@@ -96,7 +96,7 @@ namespace _10_DatabaseCrud1
 
             //foreach (DataRow row in dataTable.Rows)
             //{
-            //    foreach (var item in row.ItemArray)
+            //    foreach (var item in row.ItemArray)  
             //    {
             //        Console.Write(item.ToString() + " ");  
             //    }
