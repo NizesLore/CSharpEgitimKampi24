@@ -158,7 +158,7 @@ namespace _10_DatabaseCrud1
 
             //Console.WriteLine("Güncelleme başarılı! ");
             #endregion
-
+              
              
             Console.Read();                 
               
