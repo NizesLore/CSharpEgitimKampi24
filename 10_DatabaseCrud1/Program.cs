@@ -81,33 +81,33 @@ namespace _10_DatabaseCrud1
 
             #endregion
 
-            #region Urun Listeleme Islemi*
+            #region Urun Listeleme Islemi
 
             //SqlConnection connection = new SqlConnection("Data source=(localdb)\\MSSQLLocalDB;initial " +
             //    "catalog=EgitimKampiDb;integrated security=true");
             //connection.Open();
             //SqlCommand command = new SqlCommand("Select * From TblProduct", connection);
             //SqlDataAdapter adapter = new SqlDataAdapter(command); //SqlDataAdapter --> Sql den verileri cekerken veri
-                                                                    //listeleme sırasında
-                                                                    //bir kopru gorevi goren bir KOMUT. Bizim icin SQL den
-                                                                    //verileri c# tarafina
-                                                                    //cekecek olan bir kopru gorevi gorcek
-            //DataTable dataTable = new DataTable();       // Verileri hafizaya (gecici bellege) alabilmek icin
-            //                                             // DataTable isminde bir sinif var
+            //                                                      //listeleme sırasında
+            //                                                      //bir kopru gorevi goren bir KOMUT. Bizim icin SQL den
+            //                                                      //verileri c# tarafina
+            //                                                      //cekecek olan bir kopru gorevi gorcek
+            //DataTable dataTable = new DataTable();                // Verileri hafizaya (gecici bellege) alabilmek icin
+            //                                                      // DataTable isminde bir sinif var
             //adapter.Fill(dataTable);
 
             //foreach (DataRow row in dataTable.Rows)
             //{
-            //    foreach (var item in row.ItemArray)  
+            //    foreach (var item in row.ItemArray)
             //    {
-            //        Console.Write(item.ToString() + " ");  
+            //        Console.Write(item.ToString() + " ");
             //    }
-            //    Console.WriteLine();   
-            //}    
-              
-            //connection.Close();               
+            //    Console.WriteLine();
+            //}
 
-            #endregion  
+            //connection.Close();
+
+            #endregion
 
             #region Urun Silme İslemi*
 
@@ -128,7 +128,6 @@ namespace _10_DatabaseCrud1
 
             //Console.WriteLine("Silme işlemi yapıldı!");
 
-
             #endregion
 
             #region Urun Guncelleme Islemi*
@@ -141,7 +140,6 @@ namespace _10_DatabaseCrud1
 
             //Console.Write("Güncellenecek Ürün Fiyatı: ");
             //decimal productPrice = decimal.Parse(Console.ReadLine());
-
 
 
             //SqlConnection connection = new SqlConnection("Data source=(localdb)\\MSSQLLocalDB;initial " +
@@ -160,10 +158,10 @@ namespace _10_DatabaseCrud1
 
             //Console.WriteLine("Güncelleme başarılı! ");
             #endregion
-              
-                   
+
+
             Console.Read();                           
-               
+                 
                               
                       
                 
